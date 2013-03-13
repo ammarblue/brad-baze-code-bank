@@ -1,0 +1,37 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf350
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10500\viewh10200\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+
+\f0\fs28 \cf0 Unzip the mpi folder in Windows or OS/X.  I haven't tried running in Linux but it should work.  The instructions are for SMP execution on a single processor.\
+The documentation and original download are at http://mpj-express.org/.\
+\
+test.java exercises a number of different MPI methods.\
+test4.java calculates PI using distributed processes.\
+\
+The local.conf file is configured for two processors on one machine.\
+The number can be increased.\
+\
+mpjrun.java is a master-control program that launches the processes and kills (cleans up) your program if it does not complete in a timely fashion. It also collects the output from the different processes and sorts it into the proper order.\
+\
+java mpjrun timeLimit(secs) nProcessors executable niodev\
+\
+java mpjrun 20 2 test4 niodev\
+OUTPUT\
+java test4 0 local.conf niodev\
+java test4 1 local.conf niodev\
+*****************RANK 0 ***************\
+pi is 3.141600986923124, Error is 8.333333330945436E-6\
+*****************RANK 1 ***************\
+***************** COMPLETED ***************\
+\
+You can also start all the processes manually.\
+In Windows, start them in different command windows but in the mpi directory.\
+In OS/X or Linux, as follows\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\ql\qnatural\pardirnatural
+\cf0 java test4 0 local.conf niodev&\
+java test4 1 local.conf niodev\
+\
+The 0 1 \'85 are the processors' ranks.\
+The number of processors used must match the number in local.conf.}
