@@ -1,0 +1,78 @@
+//import JOMP;
+public class test2 implements IWork {
+	public static void main(String args[]) {
+		/*test2[] c=new test2[102];
+		for(int i=0;i<102;i++){
+			c[i]=new test2();
+			c[i].compute(args);
+		}
+		JOMP.finish();*/
+		test2 c=new test2();
+		c.compute(args);
+		JOMP.finish();
+	}
+   int start, end;          /* range of numbers to search */
+   int number_of_primes=0;  /* number of primes found */
+   int number_of_41primes=0;/* number of 4n+1 primes found */
+   int number_of_43primes=0;/* number of 4n-1 primes found */
+   int print_primes=0;      /* should each prime be printed? */
+public void compute(String args[]){
+   int j, limit;
+   int prime;               /* is the number prime? */
+   start = 0;   end = 10000000;
+   if ((start % 2)==0) start++;
+   if (args.length == 3 && Integer.parseInt(args[2]) != 0) print_primes = 1;
+   System.out.printf("Range to check for Primes: %d - %d",start, end);
+   long time=System.nanoTime();
+   if (start==1 || start==2) {
+       if (print_primes!=0) System.out.printf("2 ");
+       number_of_primes++; start=3;
+   }
+//jomp parallel for shared(start,end) private(j,limit,prime) reduction(+:number_of_primes,number_of_41primes,number_of_43primes)
+   JOMP.work(this, 3, 100000, 2, 1, 8, JOMP.STATIC,0);
+   System.out.printf("\ntime=%d\n", System.nanoTime()-time);
+   System.out.printf("Program Done. %d primes found\n",number_of_primes);
+   System.out.printf("Number of 4n+1 primes found: %d\n",number_of_41primes);
+   System.out.printf("Number of 4n-1 primes found: %d\n",number_of_43primes);
+}
+public boolean jmp_p1(Work w) {
+	int j;
+	int limit;
+	int prime;
+	int number_of_primes=0;  /* number of primes found */
+	int number_of_41primes=0;/* number of 4n+1 primes found */
+	int number_of_43primes=0;/* number of 4n-1 primes found */
+	   //System.out.println(w.start+" "+w.end);
+	for (int  i =w.start; i <=w.end; i += 2) {
+      limit = (int) Math.sqrt((float)i) + 1;
+      prime = 1; // assume number is prime 
+      j = 3;
+      while (prime!=0 && (j <= limit)) {
+         if (i%j == 0) prime = 0;
+         j += 2;
+      }
+      if (prime!=0) {
+        if (print_primes!=0) System.out.printf("%d ",i);
+        number_of_primes++;
+        if (i%4 == 1) number_of_41primes++;
+        if (i%4 == 3) number_of_43primes++;
+      }
+	} //for
+	System.out.println("***"+w.start+" "+w.end+" "+number_of_primes+" "+number_of_41primes+" "+number_of_43primes);
+	synchronized(JOMP.critical()) {
+		this.number_of_primes+=number_of_primes;
+		this.number_of_41primes+=number_of_41primes;
+		this.number_of_43primes+=number_of_43primes;
+	}
+	return true;
+   }
+
+	public boolean evaluate(Work w) {
+		boolean result=true;
+		switch (w.task) {
+		case 1: result=jmp_p1(w); break;
+		} //switch
+		w.countDown();
+		return result;
+	}
+}
