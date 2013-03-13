@@ -1,0 +1,18 @@
+Mandelbox Recursive Box,This shows a box surrounded by boxes in the mandelbox., https://sites.google.com/site/mandelbox/negative-mandelbox,0,-1.622664,-1.7874128,-2.1724353,-0.640625,-0.14722182,false,true
+Mandelbulb Top,The mighty mandelbulb., http://en.wikipedia.org/wiki/Mandelbulb,2,0.9690016,-1.661848,-1.2458057,-0.5058594,0.23333435,false,true
+Menger Madness,An example of Kaleidoscopic (escape time) IFS.,http://www.fractalforums.com/ifs-iterated-function-systems/kaleidoscopic-(escape-time-ifs)/?PHPSESSID=612c44276554fea356657ac4f8fab865,3,0.3091741,0.3684677,-0.6906702,-0.5527344,-0.26111,false,true
+Underwater world,A klienin fractal from Hartverdrahtet.,http://www.pouet.net/prod.php?which=59086,13,0.063720666,2.1544087,1.0075144,-5.794922,-0.04722152,true,false
+Boneyard,A klienin fractal  from Hartverdrahtet.,http://www.pouet.net/prod.php?which=59086,15,2.4935331,4.3422484,0.2888519,-4.4492188,-0.3888882,true,false
+Scale 2 Mandelbox,Complete mandelbox with a scale of 2., http://en.wikipedia.org/wiki/Mandelbox,4,-4.5956388,0.79570967,-2.6677458,1.0566406,-0.17777705,false,true
+After The Blast,On the edge of the mandelbox -2., http://en.wikipedia.org/wiki/Mandelbox,4,-1.0941502,-1.0277523,-1.3956243,4.6992188,-1.1777778,true,true
+Alien Forest,Menger Kaleidoscopic (escape time) IFS with tweaks.,http://www.fractalforums.com/ifs-iterated-function-systems/kaleidoscopic-(escape-time-ifs)/?PHPSESSID=612c44276554fea356657ac4f8fab865,6,2.2553093,-2.0702217,0.0979007,4.908203,-0.083332926,false,true
+Blob,A sphere perturbed with noise.,http://www.noisemachine.com/talk1/,8,1.8220129,-0.47090712,-0.27060673,4.8710938,0.17222224,false,true
+In The Lair,Hartverdrahtet based fractal with loverly organic meted plastic look.,http://www.pouet.net/prod.php?which=59086,14,1.6440566,6.913331,-2.2542448,12.871094,-6.416666,true,false
+Noisey ball,Simple sphere with noise.,http://www.noisemachine.com/talk1/,19,0.38065568,0.19680908,-2.0440474,6.095703,-0.12777624,false,true
+Mandelbox detail,Close up on mandelbox 2., http://en.wikipedia.org/wiki/Mandelbox,4,-2.1020577,0.18399447,-1.4200108,2.2011719,-0.42777553,true,true
+Mandelbox Detail Two,Close up on mandelbox 2., http://en.wikipedia.org/wiki/Mandelbox,4,-1.9970148,0.11104358,-1.7676224,4.0078125,-0.2611078,false,true
+Pods,Mandel box close up., http://en.wikipedia.org/wiki/Mandelbox,1,-0.050540853,0.6252216,-3.4864328,-0.01953125,-0.94444364,true,false
+Flower Box,Mandelbox again., http://en.wikipedia.org/wiki/Mandelbox,1,-0.14748523,0.20761229,-2.1260352,6.2539062,-0.38055402,true,false
+Complete Mandelbulb,The first of the new wave of 3D fractals., http://en.wikipedia.org/wiki/Mandelbulb,2,2.3488119,-1.5020171,-2.8970718,-0.6235673,0.38666767,false,true
+Hive,Another Hartverdrahtet based fractal.,http://www.pouet.net/prod.php?which=59086,12,4.6003213,-2.8618248,0.6884978,2.1316407,-0.02999658,true,false
+Polars place,Scene added by polar.,http://www.openprocessing.org/user/677,4,-1.9442687,0.26660874,-1.5375192,2.3334615,0.21389107,true,true
