@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="hello">Sensor Test Version 1</string>
+    <string name="app_name">Sensor Test</string>
+    <string name="AXValue">AX Value</string>
+    <string name="Accelerometer">Accelerometer</string>
+    <string name="Orientation">Orientation</string>
+    <string name="AZValue">AZ Value</string>
+    <string name="OXValue">OX Value</string>
+    <string name="OZValue">OZ Value</string>
+    <string name="AYValue">AY Value</string>
+    <string name="OYValue">OY Value</string>
+</resources>
