@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="PLAYER_CREATION_IMAGES"/>
+	<classpathentry kind="lib" path="PLAYER_CREATION_TEXT_IMAGES"/>
+	<classpathentry kind="lib" path="WELCOME_TEXT_IMAGES"/>
+	<classpathentry kind="lib" path="WELCOME_IMAGES"/>
+	<classpathentry kind="lib" path="TRANSITION1_IMAGES"/>
+	<classpathentry kind="lib" path="CHARACTER_LIST_IMAGES"/>
+	<classpathentry kind="lib" path="CHARACTER_LIST_TEXT_IMAGES"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
