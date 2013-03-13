@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">Hello Form</string>
+    <string name="test">this is a button test</string>
+    <string name="button">this is a button</string>
+</resources>
