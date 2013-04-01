@@ -1,0 +1,1560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.2" icons="false" always-add-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="true" nesting-relationships="true">  
+  <class id="1" language="java" name="appGUI.InterpolatedFloat" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="862" width="195" x="79" y="2195"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="appGUI.PropertySliderFloat" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="190" width="239" x="3806" y="1207"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="appGUI.GraphFrame" project="AppGUI" file="/AppGUI/src/appGUI.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="414" width="305" x="419" y="1741"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="appGUI.PropertyList" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="174" width="198" x="2377" y="1207"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="appGUI.PropertyDisplay" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="126" width="180" x="1903" y="817"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="appGUI.PropertyEditInteger" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="158" width="201" x="3292" y="1207"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="appGUI.TestButton" project="AppGUI" file="/AppGUI/src/appGUI.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="94" width="130" x="2466" y="817"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="appGUI" project="AppGUI" file="/AppGUI/src/appGUI.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="366" width="171" x="2405" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="appGUI.PropertyEditString" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="158" width="191" x="3533" y="1207"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="appGUI.ColorChooserFrame" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="302" width="308" x="1293" y="2195"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="appGUI.PropertyListFrame" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="206" width="276" x="1438" y="1741"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="12" language="java" name="appGUI.FrameCreator" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="78" width="168" x="1022" y="3097"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="13" language="java" name="appGUI.ColorGradient" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="462" width="205" x="172" y="3097"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="appGUI.MinyString" project="AppGUI" file="/AppGUI/src/appGUI.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="158" width="117" x="4123" y="1741"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="appGUI.InterpolatedFloat.VarKey" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="87" x="45" y="3097"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="appGUI.MinyGUI" project="AppGUI" file="/AppGUI/src/appGUI.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="590" width="175" x="1811" y="3097"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="appGUI.MinyInteger" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="158" width="122" x="3033" y="2195"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="18" language="java" name="appGUI.MinyWidget" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="158" width="131" x="1876" y="3727"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="19" language="java" name="appGUI.PropertySliderInteger" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="190" width="238" x="2993" y="1207"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="appGUI.ColorGradient.VarKey" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="87" x="172" y="3727"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="appGUI.PropertyButton" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="174" width="198" x="2123" y="817"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="appGUI.PropertyGradient" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="190" width="203" x="758" y="2195"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="23" language="java" name="appGUI.MinyValue" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="78" width="103" x="3012" y="3727"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="24" language="java" name="appGUI.GradientFrame" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="286" width="319" x="827" y="1741"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="appGUI.PropertyEdit" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="350" width="145" x="3214" y="817"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="appGUI.MinyBoolean" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="158" width="128" x="2762" y="1207"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="appGUI.Rect" project="AppGUI" file="/AppGUI/src/appGUI.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="174" width="99" x="1876" y="3925"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="appGUI.PropertyCheckBox" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="158" width="206" x="2657" y="817"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="29" language="java" name="appGUI.ButtonCallback" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="78" width="130" x="1943" y="1741"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="30" language="java" name="appGUI.MinyColor" project="AppGUI" file="/AppGUI/src/appGUI.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="286" width="103" x="2314" y="3097"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="appGUI.PropertyEditFloat" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="158" width="181" x="4106" y="1207"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="appGUI.VScrollbar" project="AppGUI" file="/AppGUI/src/appGUI.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="254" width="145" x="1922" y="2195"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="appGUI.Property" project="AppGUI" file="/AppGUI/src/appGUI.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="334" width="145" x="2239" y="443"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="appGUI.MinyFloat" project="AppGUI" file="/AppGUI/src/appGUI.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="158" width="112" x="4280" y="1741"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="appGUI.PropertyButtonImage" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="126" width="226" x="1964" y="1207"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="appGUI.PropertyColorChooser" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="190" width="209" x="1549" y="817"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="appGUI.PropertyGraph" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="190" width="205" x="1120" y="817"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="appGUI.MinyFrame" project="AppGUI" file="/AppGUI/src/appGUI.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="494" width="158" x="1188" y="1207"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="appGUI.PropertySlider" project="AppGUI" file="/AppGUI/src/appGUI.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="190" width="145" x="2924" y="817"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <nesting id="40">    
+    <bendpoint x="4422" y="443"/>    
+    <bendpoint x="4422" y="817"/>    
+    <bendpoint x="4422" y="1207"/>    
+    <bendpoint x="4422" y="1741"/>    
+    <bendpoint x="4422" y="2195"/>    
+    <bendpoint x="4422" y="3097"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="23"/>  
+  </nesting>  
+  <nesting id="41">    
+    <bendpoint x="1809" y="443"/>    
+    <bendpoint x="1809" y="817"/>    
+    <bendpoint x="1870" y="1207"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="29"/>  
+  </nesting>  
+  <association id="42">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="43" name="_property"/>      
+      <multiplicity id="44" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="45">    
+    <bendpoint x="3141" y="817"/>    
+    <bendpoint x="3754" y="1207"/>    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="46">    
+    <bendpoint x="2605" y="1207"/>    
+    <bendpoint x="2304" y="1741"/>    
+    <bendpoint x="2199" y="2195"/>    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <nesting id="47">    
+    <bendpoint x="2163" y="443"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="5"/>  
+  </nesting>  
+  <realization id="48">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="23"/>  
+  </realization>  
+  <association id="49">    
+    <bendpoint x="727" y="2195"/>    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="50" name="_property"/>      
+      <multiplicity id="51" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="52">    
+    <bendpoint x="325" y="443"/>    
+    <bendpoint x="325" y="817"/>    
+    <bendpoint x="325" y="1207"/>    
+    <bendpoint x="325" y="1741"/>    
+    <bendpoint x="325" y="2195"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="53" name="gradient"/>      
+      <multiplicity id="54" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="55">    
+    <bendpoint x="2208" y="443"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="21"/>  
+  </nesting>  
+  <association id="56">    
+    <bendpoint x="2893" y="443"/>    
+    <bendpoint x="2893" y="817"/>    
+    <bendpoint x="2689" y="1207"/>    
+    <bendpoint x="2619" y="1741"/>    
+    <bendpoint x="2549" y="2195"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="57" name="borderColor"/>      
+      <multiplicity id="58" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="59">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="60" name="locked"/>      
+      <multiplicity id="61" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="62">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="33"/>  
+  </nesting>  
+  <association id="63">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="64" name="_value"/>      
+      <multiplicity id="65" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="66">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="67" name="_value"/>      
+      <multiplicity id="68" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="69">    
+    <bendpoint x="2037" y="3097"/>    
+    <bendpoint x="2037" y="3727"/>    
+    <end type="SOURCE" refId="32" navigable="false">      
+      <attribute id="70" name="_area"/>      
+      <multiplicity id="71" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="72">    
+    <bendpoint x="1136" y="1207"/>    
+    <bendpoint x="1176" y="1741"/>    
+    <bendpoint x="1115" y="2195"/>    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="12"/>  
+  </realization>  
+  <nesting id="73">    
+    <bendpoint x="2819" y="443"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="25"/>  
+  </nesting>  
+  <generalization id="74">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="33"/>  
+  </generalization>  
+  <dependency id="75">    
+    <bendpoint x="1397" y="1207"/>    
+    <bendpoint x="1407" y="1741"/>    
+    <bendpoint x="1715" y="2195"/>    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <association id="76">    
+    <bendpoint x="2304" y="1207"/>    
+    <bendpoint x="2346" y="1741"/>    
+    <bendpoint x="2418" y="2195"/>    
+    <bendpoint x="2489" y="3097"/>    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="77" name="_value"/>      
+      <multiplicity id="78" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="79">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <realization id="80">    
+    <bendpoint x="1418" y="1207"/>    
+    <bendpoint x="1281" y="1741"/>    
+    <bendpoint x="1199" y="2195"/>    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="12"/>  
+  </realization>  
+  <nesting id="81">    
+    <bendpoint x="2414" y="443"/>    
+    <bendpoint x="2414" y="817"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="4"/>  
+  </nesting>  
+  <dependency id="82">    
+    <bendpoint x="2241" y="1741"/>    
+    <bendpoint x="2178" y="2195"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <association id="83">    
+    <bendpoint x="1845" y="3727"/>    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="84" name="_area"/>      
+      <multiplicity id="85" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="86">    
+    <bendpoint x="2731" y="1207"/>    
+    <bendpoint x="2752" y="1741"/>    
+    <bendpoint x="2773" y="2195"/>    
+    <bendpoint x="2773" y="3097"/>    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <nesting id="87">    
+    <bendpoint x="1434" y="443"/>    
+    <bendpoint x="1434" y="817"/>    
+    <bendpoint x="1439" y="1207"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="11"/>  
+  </nesting>  
+  <dependency id="88">    
+    <bendpoint x="1912" y="1207"/>    
+    <bendpoint x="1912" y="1741"/>    
+    <bendpoint x="1891" y="2195"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <association id="89">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="90" name="time2"/>      
+      <multiplicity id="91" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="false" multiplicity="false"/>  
+  </association>  
+  <nesting id="92">    
+    <bendpoint x="367" y="443"/>    
+    <bendpoint x="367" y="817"/>    
+    <bendpoint x="367" y="1207"/>    
+    <bendpoint x="367" y="1741"/>    
+    <bendpoint x="449" y="2195"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="12"/>  
+  </nesting>  
+  <association id="93">    
+    <bendpoint x="3164" y="1741"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="94" name="_value"/>      
+      <multiplicity id="95" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="96">    
+    <bendpoint x="4092" y="1741"/>    
+    <bendpoint x="4092" y="2195"/>    
+    <bendpoint x="4092" y="3097"/>    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <generalization id="97">    
+    <bendpoint x="1302" y="1741"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="38"/>  
+  </generalization>  
+  <dependency id="98">    
+    <bendpoint x="2283" y="1207"/>    
+    <bendpoint x="2283" y="1741"/>    
+    <bendpoint x="2304" y="2195"/>    
+    <bendpoint x="2304" y="3097"/>    
+    <bendpoint x="2304" y="3727"/>    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <nesting id="99">    
+    <bendpoint x="2444" y="443"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="7"/>  
+  </nesting>  
+  <dependency id="100">    
+    <bendpoint x="1694" y="2195"/>    
+    <bendpoint x="1694" y="3097"/>    
+    <bendpoint x="1694" y="3727"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <nesting id="101">    
+    <bendpoint x="2674" y="443"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="39"/>  
+  </nesting>  
+  <nesting id="102">    
+    <bendpoint x="1497" y="443"/>    
+    <bendpoint x="1497" y="817"/>    
+    <bendpoint x="1641" y="1207"/>    
+    <bendpoint x="1786" y="1741"/>    
+    <bendpoint x="1799" y="2195"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="16"/>  
+  </nesting>  
+  <realization id="103">    
+    <bendpoint x="2241" y="1207"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="29"/>  
+  </realization>  
+  <dependency id="104">    
+    <bendpoint x="1736" y="2195"/>    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <association id="105">    
+    <bendpoint x="1481" y="1207"/>    
+    <bendpoint x="1386" y="1741"/>    
+    <end type="SOURCE" refId="36" navigable="false">      
+      <attribute id="106" name="_frame"/>      
+      <multiplicity id="107" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="108">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <nesting id="109">    
+    <bendpoint x="1089" y="443"/>    
+    <bendpoint x="1089" y="817"/>    
+    <bendpoint x="1089" y="1207"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="24"/>  
+  </nesting>  
+  <association id="110">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="111" name="_value"/>      
+      <multiplicity id="112" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="113">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="25"/>  
+  </generalization>  
+  <dependency id="114">    
+    <bendpoint x="775" y="1207"/>    
+    <bendpoint x="388" y="1741"/>    
+    <bendpoint x="397" y="2195"/>    
+    <bendpoint x="407" y="3097"/>    
+    <bendpoint x="407" y="3727"/>    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <nesting id="115">    
+    <bendpoint x="4338" y="443"/>    
+    <bendpoint x="4338" y="817"/>    
+    <bendpoint x="4338" y="1207"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="14"/>  
+  </nesting>  
+  <dependency id="116">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <dependency id="117">    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <generalization id="118">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="38"/>  
+  </generalization>  
+  <generalization id="119">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="33"/>  
+  </generalization>  
+  <association id="120">    
+    <bendpoint x="1933" y="1207"/>    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="121" name="_callback"/>      
+      <multiplicity id="122" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="123">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <dependency id="124">    
+    <bendpoint x="3161" y="1741"/>    
+    <bendpoint x="3161" y="2195"/>    
+    <bendpoint x="3161" y="3097"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <association id="125">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="126" name="keysList"/>      
+      <multiplicity id="127" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="128">    
+    <bendpoint x="3162" y="443"/>    
+    <bendpoint x="3162" y="817"/>    
+    <bendpoint x="2962" y="1207"/>    
+    <bendpoint x="2820" y="1741"/>    
+    <bendpoint x="2689" y="2195"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="30"/>  
+  </nesting>  
+  <nesting id="129">    
+    <bendpoint x="388" y="443"/>    
+    <bendpoint x="388" y="817"/>    
+    <bendpoint x="388" y="1207"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="3"/>  
+  </nesting>  
+  <realization id="130">    
+    <bendpoint x="1260" y="1741"/>    
+    <bendpoint x="1262" y="2195"/>    
+    <bendpoint x="1283" y="3097"/>    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="18"/>  
+  </realization>  
+  <generalization id="131">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="25"/>  
+  </generalization>  
+  <association id="132">    
+    <bendpoint x="1218" y="1741"/>    
+    <bendpoint x="1178" y="2195"/>    
+    <bendpoint x="1220" y="3097"/>    
+    <bendpoint x="1220" y="3727"/>    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="133" name="_saved"/>      
+      <multiplicity id="134" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="135">    
+    <bendpoint x="304" y="443"/>    
+    <bendpoint x="304" y="817"/>    
+    <bendpoint x="304" y="1207"/>    
+    <bendpoint x="304" y="1741"/>    
+    <bendpoint x="304" y="2195"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="13"/>  
+  </nesting>  
+  <nesting id="136">    
+    <bendpoint x="4380" y="443"/>    
+    <bendpoint x="4380" y="817"/>    
+    <bendpoint x="4380" y="1207"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="34"/>  
+  </nesting>  
+  <association id="137">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="138" name="time2"/>      
+      <multiplicity id="139" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="false" multiplicity="false"/>  
+  </association>  
+  <generalization id="140">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="33"/>  
+  </generalization>  
+  <association id="141">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="142" name="_value"/>      
+      <multiplicity id="143" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="144">    
+    <bendpoint x="3185" y="1741"/>    
+    <bendpoint x="3185" y="2195"/>    
+    <bendpoint x="2981" y="3097"/>    
+    <bendpoint x="2981" y="3727"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <nesting id="145">    
+    <bendpoint x="3265" y="443"/>    
+    <bendpoint x="3265" y="817"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="31"/>  
+  </nesting>  
+  <association id="146">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="147" name="_value"/>      
+      <multiplicity id="148" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="149">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="15"/>  
+  </nesting>  
+  <dependency id="150">    
+    <bendpoint x="4071" y="1741"/>    
+    <bendpoint x="4071" y="2195"/>    
+    <bendpoint x="4071" y="3097"/>    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <generalization id="151">    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="33"/>  
+  </generalization>  
+  <dependency id="152">    
+    <bendpoint x="2220" y="1207"/>    
+    <bendpoint x="2157" y="1741"/>    
+    <bendpoint x="2157" y="2195"/>    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="153">    
+    <bendpoint x="2435" y="817"/>    
+    <bendpoint x="2647" y="1207"/>    
+    <bendpoint x="2689" y="1741"/>    
+    <bendpoint x="2731" y="2195"/>    
+    <bendpoint x="2731" y="3097"/>    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <association id="154">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="155" name="_value"/>      
+      <multiplicity id="156" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="157">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="25"/>  
+  </generalization>  
+  <association id="158">    
+    <bendpoint x="779" y="1207"/>    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="159" name="_frame"/>      
+      <multiplicity id="160" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="161">    
+    <bendpoint x="4075" y="443"/>    
+    <bendpoint x="4075" y="817"/>    
+    <bendpoint x="4075" y="1207"/>    
+    <bendpoint x="4050" y="1741"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="17"/>  
+  </nesting>  
+  <dependency id="162">    
+    <bendpoint x="3002" y="1741"/>    
+    <bendpoint x="3002" y="2195"/>    
+    <bendpoint x="3002" y="3097"/>    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="163">    
+    <bendpoint x="2605" y="1741"/>    
+    <bendpoint x="2612" y="2195"/>    
+    <bendpoint x="2612" y="3097"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <dependency id="164">    
+    <bendpoint x="1220" y="2195"/>    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <association id="165">    
+    <bendpoint x="1652" y="2195"/>    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="166" name="_color"/>      
+      <multiplicity id="167" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="168">    
+    <bendpoint x="1334" y="443"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="37"/>  
+  </nesting>  
+  <association id="169">    
+    <bendpoint x="3775" y="443"/>    
+    <bendpoint x="3775" y="817"/>    
+    <bendpoint x="3775" y="1207"/>    
+    <bendpoint x="3775" y="1741"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="170" name="speed"/>      
+      <multiplicity id="171" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="172">    
+    <bendpoint x="1355" y="443"/>    
+    <bendpoint x="1355" y="817"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="38"/>  
+  </nesting>  
+  <dependency id="173">    
+    <bendpoint x="2710" y="1207"/>    
+    <bendpoint x="2710" y="1741"/>    
+    <bendpoint x="2710" y="2195"/>    
+    <bendpoint x="2570" y="3097"/>    
+    <bendpoint x="2570" y="3727"/>    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <dependency id="174">    
+    <bendpoint x="2178" y="1741"/>    
+    <bendpoint x="2220" y="2195"/>    
+    <bendpoint x="2220" y="3097"/>    
+    <bendpoint x="2220" y="3727"/>    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <association id="175">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="176" name="scrollbar"/>      
+      <multiplicity id="177" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="178">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="179" name="_value"/>      
+      <multiplicity id="180" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="181">    
+    <bendpoint x="2393" y="817"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="33"/>  
+  </generalization>  
+  <nesting id="182">    
+    <bendpoint x="2626" y="443"/>    
+    <bendpoint x="2626" y="817"/>    
+    <bendpoint x="2626" y="1207"/>    
+    <bendpoint x="2626" y="1741"/>    
+    <bendpoint x="2570" y="2195"/>    
+    <bendpoint x="2447" y="3097"/>    
+    <bendpoint x="2447" y="3727"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="27"/>  
+  </nesting>  
+  <association id="183">    
+    <bendpoint x="2714" y="1741"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="184" name="_value"/>      
+      <multiplicity id="185" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="186">    
+    <bendpoint x="3281" y="1741"/>    
+    <bendpoint x="3281" y="2195"/>    
+    <bendpoint x="3281" y="3097"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <association id="187">    
+    <bendpoint x="1323" y="1741"/>    
+    <bendpoint x="1631" y="2195"/>    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="188" name="_parent"/>      
+      <multiplicity id="189" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="190">    
+    <bendpoint x="3389" y="443"/>    
+    <bendpoint x="3389" y="817"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="6"/>  
+  </nesting>  
+  <association id="191">    
+    <bendpoint x="409" y="1207"/>    
+    <bendpoint x="346" y="1741"/>    
+    <end type="SOURCE" refId="37" navigable="false">      
+      <attribute id="192" name="_value"/>      
+      <multiplicity id="193" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="194">    
+    <bendpoint x="1788" y="443"/>    
+    <bendpoint x="1788" y="817"/>    
+    <bendpoint x="1786" y="1207"/>    
+    <bendpoint x="1870" y="1741"/>    
+    <bendpoint x="2097" y="2195"/>    
+    <bendpoint x="2097" y="3097"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="18"/>  
+  </nesting>  
+  <dependency id="195">    
+    <bendpoint x="2346" y="1207"/>    
+    <bendpoint x="2469" y="1741"/>    
+    <bendpoint x="2591" y="2195"/>    
+    <bendpoint x="2591" y="3097"/>    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <realization id="196">    
+    <bendpoint x="3031" y="3097"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="23"/>  
+  </realization>  
+  <association id="197">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="198" name="focus"/>      
+      <multiplicity id="199" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="200">    
+    <bendpoint x="283" y="443"/>    
+    <bendpoint x="283" y="817"/>    
+    <bendpoint x="283" y="1207"/>    
+    <bendpoint x="283" y="1741"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="201" name="rotation"/>      
+      <multiplicity id="202" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="203">    
+    <bendpoint x="2016" y="3097"/>    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="18"/>  
+  </realization>  
+  <association id="204">    
+    <bendpoint x="1830" y="817"/>    
+    <bendpoint x="1807" y="1207"/>    
+    <bendpoint x="1849" y="1741"/>    
+    <bendpoint x="1849" y="2195"/>    
+    <end type="SOURCE" refId="33" navigable="false">      
+      <attribute id="205" name="_parent"/>      
+      <multiplicity id="206" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="207">    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="21"/>  
+  </generalization>  
+  <nesting id="208">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="20"/>  
+  </nesting>  
+  <association id="209">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="210" name="rSize"/>      
+      <multiplicity id="211" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="false" multiplicity="false"/>  
+  </association>  
+  <dependency id="212">    
+    <bendpoint x="2118" y="1741"/>    
+    <bendpoint x="2118" y="2195"/>    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <generalization id="213">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="39"/>  
+  </generalization>  
+  <association id="214">    
+    <bendpoint x="4317" y="443"/>    
+    <bendpoint x="4317" y="817"/>    
+    <bendpoint x="4317" y="1207"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="215" name="timeCaption"/>      
+      <multiplicity id="216" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="217">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="38"/>  
+  </generalization>  
+  <association id="218">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="219" name="_frame"/>      
+      <multiplicity id="220" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="221">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="222" name="_property"/>      
+      <multiplicity id="223" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="224">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="33"/>  
+  </generalization>  
+  <nesting id="225">    
+    <bendpoint x="2978" y="443"/>    
+    <bendpoint x="2978" y="817"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="9"/>  
+  </nesting>  
+  <nesting id="226">    
+    <bendpoint x="1767" y="443"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="36"/>  
+  </nesting>  
+  <realization id="227">    
+    <bendpoint x="2351" y="817"/>    
+    <bendpoint x="2262" y="1207"/>    
+    <bendpoint x="2220" y="1741"/>    
+    <bendpoint x="2241" y="2195"/>    
+    <bendpoint x="2199" y="3097"/>    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="18"/>  
+  </realization>  
+  <association id="228">    
+    <end type="SOURCE" refId="28" navigable="false">      
+      <attribute id="229" name="_value"/>      
+      <multiplicity id="230" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="231">    
+    <bendpoint x="3120" y="443"/>    
+    <bendpoint x="3120" y="817"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="232" name="running"/>      
+      <multiplicity id="233" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="234">    
+    <bendpoint x="3099" y="443"/>    
+    <bendpoint x="3099" y="817"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="26"/>  
+  </nesting>  
+  <generalization id="235">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="39"/>  
+  </generalization>  
+  <association id="236">    
+    <bendpoint x="1239" y="1741"/>    
+    <bendpoint x="1241" y="2195"/>    
+    <bendpoint x="1241" y="3097"/>    
+    <bendpoint x="1241" y="3727"/>    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="237" name="_box"/>      
+      <multiplicity id="238" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="239">    
+    <bendpoint x="1723" y="1207"/>    
+    <bendpoint x="1765" y="1741"/>    
+    <bendpoint x="1757" y="2195"/>    
+    <bendpoint x="1757" y="3097"/>    
+    <bendpoint x="1757" y="3727"/>    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <dependency id="240">    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <association id="241">    
+    <bendpoint x="1673" y="2195"/>    
+    <bendpoint x="1365" y="1741"/>    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="242" name="frames"/>      
+      <multiplicity id="243" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="38" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="244">    
+    <bendpoint x="4359" y="443"/>    
+    <bendpoint x="4359" y="817"/>    
+    <bendpoint x="4359" y="1207"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="245" name="stWidth"/>      
+      <multiplicity id="246" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="247">    
+    <bendpoint x="1765" y="1207"/>    
+    <bendpoint x="1807" y="1741"/>    
+    <bendpoint x="1820" y="2195"/>    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <nesting id="248">    
+    <bendpoint x="2540" y="443"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="28"/>  
+  </nesting>  
+  <nesting id="249">    
+    <bendpoint x="1376" y="443"/>    
+    <bendpoint x="1376" y="817"/>    
+    <bendpoint x="1376" y="1207"/>    
+    <bendpoint x="1344" y="1741"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="10"/>  
+  </nesting>  
+  <dependency id="250">    
+    <bendpoint x="2372" y="817"/>    
+    <bendpoint x="2325" y="1207"/>    
+    <bendpoint x="2325" y="1741"/>    
+    <bendpoint x="2325" y="2195"/>    
+    <bendpoint x="2325" y="3097"/>    
+    <bendpoint x="2325" y="3727"/>    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <dependency id="251">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="26"/>  
+  </dependency>  
+  <realization id="252">    
+    <bendpoint x="2896" y="1741"/>    
+    <bendpoint x="2896" y="2195"/>    
+    <bendpoint x="2896" y="3097"/>    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="23"/>  
+  </realization>  
+  <generalization id="253">    
+    <bendpoint x="775" y="1741"/>    
+    <bendpoint x="1157" y="1207"/>    
+    <bendpoint x="1476" y="817"/>    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="33"/>  
+  </generalization>  
+  <dependency id="254">    
+    <bendpoint x="2920" y="1207"/>    
+    <bendpoint x="2841" y="1741"/>    
+    <bendpoint x="2752" y="2195"/>    
+    <bendpoint x="2710" y="3097"/>    
+    <bendpoint x="2710" y="3727"/>    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <dependency id="255">    
+    <bendpoint x="1262" y="3097"/>    
+    <bendpoint x="1262" y="3727"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <dependency id="256">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <association id="257">    
+    <bendpoint x="1455" y="443"/>    
+    <bendpoint x="1455" y="817"/>    
+    <bendpoint x="1460" y="1207"/>    
+    <bendpoint x="1744" y="1741"/>    
+    <bendpoint x="1778" y="2195"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="258" name="gui"/>      
+      <multiplicity id="259" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="260">    
+    <bendpoint x="3022" y="1741"/>    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="261" name="_value"/>      
+      <multiplicity id="262" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="263">    
+    <bendpoint x="796" y="1741"/>    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <nesting id="264">    
+    <bendpoint x="3183" y="443"/>    
+    <bendpoint x="3183" y="817"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="19"/>  
+  </nesting>  
+  <association id="265">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="266" name="_frame"/>      
+      <multiplicity id="267" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="268">    
+    <bendpoint x="1849" y="1207"/>    
+    <bendpoint x="2066" y="1741"/>    
+    <bendpoint x="2283" y="2195"/>    
+    <end type="SOURCE" refId="36" navigable="false">      
+      <attribute id="269" name="_value"/>      
+      <multiplicity id="270" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="271">    
+    <bendpoint x="2668" y="1207"/>    
+    <bendpoint x="2367" y="1741"/>    
+    <bendpoint x="2262" y="2195"/>    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <nesting id="272">    
+    <bendpoint x="3115" y="443"/>    
+    <bendpoint x="3115" y="817"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="2"/>  
+  </nesting>  
+  <association id="273">    
+    <end type="SOURCE" refId="32" navigable="false">      
+      <attribute id="274" name="_parent"/>      
+      <multiplicity id="275" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="276">    
+    <bendpoint x="970" y="3097"/>    
+    <bendpoint x="970" y="3727"/>    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <nesting id="277">    
+    <bendpoint x="1518" y="443"/>    
+    <bendpoint x="1518" y="817"/>    
+    <bendpoint x="1744" y="1207"/>    
+    <bendpoint x="1828" y="1741"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="32"/>  
+  </nesting>  
+  <realization id="278">    
+    <bendpoint x="3577" y="2195"/>    
+    <bendpoint x="3577" y="3097"/>    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="23"/>  
+  </realization>  
+  <dependency id="279">    
+    <bendpoint x="3261" y="1207"/>    
+    <bendpoint x="2981" y="1741"/>    
+    <bendpoint x="2866" y="2195"/>    
+    <bendpoint x="2752" y="3097"/>    
+    <bendpoint x="2752" y="3727"/>    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <generalization id="280">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="33"/>  
+  </generalization>  
+  <dependency id="281">    
+    <bendpoint x="1157" y="2195"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <association id="282">    
+    <bendpoint x="508" y="2195"/>    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="283" name="_value"/>      
+      <multiplicity id="284" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="285">    
+    <bendpoint x="428" y="2195"/>    
+    <bendpoint x="428" y="3097"/>    
+    <bendpoint x="428" y="3727"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <association id="286">    
+    <bendpoint x="1870" y="2195"/>    
+    <bendpoint x="1891" y="1741"/>    
+    <bendpoint x="1828" y="1207"/>    
+    <bendpoint x="1851" y="817"/>    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="287" name="properties"/>      
+      <multiplicity id="288" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="33" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="289">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <nesting id="290">    
+    <bendpoint x="1872" y="443"/>    
+    <bendpoint x="1872" y="817"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="35"/>  
+  </nesting>  
+  <nesting id="291">    
+    <bendpoint x="754" y="443"/>    
+    <bendpoint x="754" y="817"/>    
+    <bendpoint x="754" y="1207"/>    
+    <bendpoint x="754" y="1741"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="22"/>  
+  </nesting>  
+  <association id="292">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="293" name="keysList"/>      
+      <multiplicity id="294" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="295">    
+    <bendpoint x="991" y="2195"/>    
+    <bendpoint x="991" y="3097"/>    
+    <bendpoint x="991" y="3727"/>    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <nesting id="296">    
+    <bendpoint x="262" y="443"/>    
+    <bendpoint x="262" y="817"/>    
+    <bendpoint x="262" y="1207"/>    
+    <bendpoint x="262" y="1741"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="1"/>  
+  </nesting>  
+  <dependency id="297">    
+    <bendpoint x="2388" y="1741"/>    
+    <bendpoint x="2388" y="2195"/>    
+    <bendpoint x="2283" y="3097"/>    
+    <bendpoint x="2283" y="3727"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="27"/>  
+  </dependency>  
+  <realization id="298">    
+    <bendpoint x="934" y="2195"/>    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="12"/>  
+  </realization>  
+  <generalization id="299">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="38"/>  
+  </generalization>  
+  <generalization id="300">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="33"/>  
+  </generalization>  
+  <dependency id="301">    
+    <bendpoint x="2941" y="1207"/>    
+    <bendpoint x="2654" y="1741"/>    
+    <bendpoint x="2367" y="2195"/>    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <dependency id="302">    
+    <bendpoint x="1891" y="1207"/>    
+    <bendpoint x="2199" y="1741"/>    
+    <bendpoint x="2346" y="2195"/>    
+    <bendpoint x="2468" y="3097"/>    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="23"/>  
+  </dependency>  
+  <realization id="303">    
+    <bendpoint x="3655" y="2195"/>    
+    <bendpoint x="3655" y="3097"/>    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="23"/>  
+  </realization>  
+  <dependency id="304">    
+    <bendpoint x="1136" y="2195"/>    
+    <bendpoint x="1197" y="1741"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="38"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="false" package="false" initial-value="false" signature="false" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="false" multiplicity="false"/>
+</class-diagram>
