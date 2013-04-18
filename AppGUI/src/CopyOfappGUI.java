@@ -15,7 +15,7 @@ import processing.core.PApplet;
 import processing.core.PGraphics;
 import processing.core.PImage;
 
-public class appGUI extends PApplet {
+public class CopyOfappGUI extends PApplet {
 	/* OpenProcessing Tweak of *@*http://www.openprocessing.org/sketch/11032*@* */
 	/*
 	 * !do not delete the line above, required for linking your tweak if you
