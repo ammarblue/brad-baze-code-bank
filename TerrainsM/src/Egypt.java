@@ -1,11 +1,10 @@
 import processing.core.PVector;
 
-
 class Egypt implements HieghtField {
 	/**
 	 * 
 	 */
-	private final terrainmarch Egypt;
+	private terrainmarch Egypt;
 
 	/**
 	 * @param terrainmarch
@@ -13,6 +12,7 @@ class Egypt implements HieghtField {
 	Egypt(terrainmarch terrainmarch) {
 		Egypt = terrainmarch;
 	}
+	Egypt(){}
 
 	public float Buildings(float x, float z) {
 		float p1 = Egypt.oldPyramid((x + 2), (z - 12.f)) * 2.f;
@@ -47,5 +47,10 @@ class Egypt implements HieghtField {
 
 	public float GetWaterHieght() {
 		return -1000.0f;
+	}
+
+	@Override
+	public void addTerrainmarch(terrainmarch in) {
+		Egypt = in;
 	}
 }

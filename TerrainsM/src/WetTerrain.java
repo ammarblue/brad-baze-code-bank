@@ -1,11 +1,10 @@
 import processing.core.PVector;
 
-
 class WetTerrain extends Terrain {
 	/**
 	 * 
 	 */
-	private final terrainmarch WetTerrain;
+	private terrainmarch WetTerrain;
 
 	/**
 	 * @param terrainmarch
@@ -13,7 +12,9 @@ class WetTerrain extends Terrain {
 	WetTerrain(terrainmarch terrainmarch) {
 		WetTerrain = terrainmarch;
 	}
-
+	WetTerrain(){
+		super();
+	}
 	public float GetHieght(float x, float z) {
 		float h = super.GetHieght(x, z);
 		float wh = GetWaterHieght();
@@ -31,18 +32,24 @@ class WetTerrain extends Terrain {
 
 	public float GetBumpStrength(PVector p) {
 		float shoresize = 0.15f;
-		float b = WetTerrain.smoothstep(0, shoresize, terrainmarch.abs(p.y - GetWaterHieght()
-				- 0.05f));
+		float b = WetTerrain.smoothstep(0, shoresize,
+				terrainmarch.abs(p.y - GetWaterHieght() - 0.05f));
 		return super.GetBumpStrength(p) * b;
 	}
 
 	public PVector GetMaterial(PVector p, PVector n) {
 		float shoresize = 0.02f;
-		float b = WetTerrain.smoothstep(0, shoresize, terrainmarch.abs(p.y - GetWaterHieght()));
-		return WetTerrain.lerp(new PVector(1.f, 1.f, 0.5f), super.GetMaterial(p, n), b);
+		float b = WetTerrain.smoothstep(0, shoresize,
+				terrainmarch.abs(p.y - GetWaterHieght()));
+		return WetTerrain.lerp(new PVector(1.f, 1.f, 0.5f),
+				super.GetMaterial(p, n), b);
 	}
 
 	public float GetAO(float x, float y, float z) {
 		return super.GetAO(x, y, z);
+	}
+	public void addTerrainmarch(terrainmarch in){
+		super.addTerrainmarch(in);
+		WetTerrain=in;
 	}
 }

@@ -1,4 +1,3 @@
-
 class GammaTable {
 	/**
 	 * 
@@ -16,7 +15,8 @@ class GammaTable {
 	}
 
 	public int Get(float v) {
-		int iv = terrainmarch.max(terrainmarch.min((int) (v * tSizef), tSize - 1), 0);
+		int iv = terrainmarch.max(
+				terrainmarch.min((int) (v * tSizef), tSize - 1), 0);
 		return g_tab[iv];
 	}
 }

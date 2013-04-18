@@ -1,13 +1,12 @@
 import processing.core.PVector;
 
-
 class Terrain implements HieghtField {
 	/**
 	 * 
 	 */
-	private final terrainmarch Terrain;
-	Terrain(){
-		Terrain=null;
+	private terrainmarch Terrain;
+
+	Terrain() {
 	}
 
 	/**
@@ -36,5 +35,10 @@ class Terrain implements HieghtField {
 
 	public float GetBumpStrength(PVector p) {
 		return 0.05f * terrainmarch.min(p.y * 2, 1);
+	}
+
+	@Override
+	public void addTerrainmarch(terrainmarch in) {
+		Terrain = in;
 	}
 }

@@ -1,11 +1,10 @@
 import processing.core.PVector;
 
-
 class Crator implements HieghtField {
 	/**
 	 * 
 	 */
-	private final terrainmarch Crator;
+	private terrainmarch Crator;
 
 	/**
 	 * @param terrainmarch
@@ -13,6 +12,7 @@ class Crator implements HieghtField {
 	Crator(terrainmarch terrainmarch) {
 		Crator = terrainmarch;
 	}
+	Crator(){}
 
 	public float GetHieght(float x, float z) {
 		float xf = x / 6;
@@ -31,14 +31,15 @@ class Crator implements HieghtField {
 		Crator.noiseDetail(3, 0.67f);
 		float nv = Crator.noise(x * 0.5f, z * 0.5f) * 2.f - 1;
 		nv *= 0.5f;
-		float incrator = terrainmarch.constrain(terrainmarch.mag(x, z - 8) - 2.5f, 0, 1);
+		float incrator = terrainmarch.constrain(
+				terrainmarch.mag(x, z - 8) - 2.5f, 0, 1);
 		return incrator * terrainmarch.abs(y - nv);
 	}
 
 	public PVector GetMaterial(PVector p, PVector n) {
 		float rock = Crator.smoothstep(0, 1, terrainmarch.min(p.y * 2.f, 1));
-		return Crator.lerp(new PVector(0.4f, 0.5f, 0.2f), new PVector(0.5f, 0.4f,
-				0.2f), rock);
+		return Crator.lerp(new PVector(0.4f, 0.5f, 0.2f), new PVector(0.5f,
+				0.4f, 0.2f), rock);
 	}
 
 	public float GetWaterHieght() {
@@ -47,5 +48,10 @@ class Crator implements HieghtField {
 
 	public float GetBumpStrength(PVector p) {
 		return terrainmarch.min(p.y * 2, 1) * .2f;
+	}
+
+	@Override
+	public void addTerrainmarch(terrainmarch in) {
+		Crator = in;
 	}
 }

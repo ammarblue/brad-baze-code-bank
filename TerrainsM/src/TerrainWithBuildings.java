@@ -1,22 +1,26 @@
 import processing.core.PVector;
 
-
 class TerrainWithBuildings extends Terrain {
 	/**
 	 * 
 	 */
-	private final terrainmarch TerrainWithBuildings;
+	private terrainmarch TerrainWithBuildings;
 
 	/**
 	 * @param terrainmarch
 	 */
+	TerrainWithBuildings() {
+	}
+
 	TerrainWithBuildings(terrainmarch terrainmarch) {
 		TerrainWithBuildings = terrainmarch;
 	}
 
 	public float Buildings(float x, float z) {
-		return TerrainWithBuildings.building(x - 1, z - 6) * 1.4f
-				+ TerrainWithBuildings.flatPyramid((x + 3) * .25f, (z - 15.f) * .25f) * 8.f;
+		return TerrainWithBuildings.building(x - 1, z - 6)
+				* 1.4f
+				+ TerrainWithBuildings.flatPyramid((x + 3) * .25f,
+						(z - 15.f) * .25f) * 8.f;
 	}
 
 	public float GetHieght(float x, float z) {
@@ -35,5 +39,10 @@ class TerrainWithBuildings extends Terrain {
 			return new PVector(1.0f, 0.8f, 1.0f);
 		}
 		return super.GetMaterial(p, n);
+	}
+
+	public void addTerrainmarch(terrainmarch in) {
+		super.addTerrainmarch(in);
+		TerrainWithBuildings = in;
 	}
 }
