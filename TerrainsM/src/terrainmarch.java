@@ -15,47 +15,55 @@ public class terrainmarch extends PApplet {
 	// cursor keys to move abount
 	// +/- to select scene
 
-	HieghtField[] Scenes = new HieghtField[] { new Terrain(this),
-			new TerrainWithBuildings(this), new BlockCity(this), /*new WetTerrain(this),*/
-			new Crator(this), new Egypt(this), new Wavey(this), new SimplePlane(this), };
-	Photo[] photographs = new Photo[] {
-			new Photo(this, "Terrain", 0, new PVector(1.f, 0.5f, 1), new PVector(
-					0.0f, 2.0f, 0.0f), 0.f, -0.3f, 1789235, false, false),
-			new Photo(this, "valley", 0, new PVector(0.78003854f, 0.24797048f,
-					0.57450026f), new PVector(12.530619f, 0.7902899f,
-					-2.8712194f), 0.89374983f, 0.0072916746f, 1789235, true,
-					true),
-			new Photo(this, "Terrain with Water", 3, new PVector(1.f, 0.5f, 1),
-					new PVector(0.0f, 2.0f, 0.0f), 0.f, -0.3f, 1789235, false,
-					false),
-
-			new Photo(this, "Block City", 2, new PVector(1.f, 0.5f, 1), new PVector(
-					0.0f, 2.0f, 0.0f), 0.5f, -0.3f, 1789235, false, false),
-
-			new Photo(this, "Crator", 4, new PVector(1.f, 0.5f, 1), new PVector(0.0f,
-					2.0f, 0.0f), 0.f, -0.3f, 1789235, true, false),
-			new Photo(this, "Reflections", 3, new PVector(0.48092172f, 0.26969612f,
-					0.83425313f), new PVector(-0.012731299f, 1.2863867f,
-					2.8419714f), 0.63750005f, -0.016666591f, 1789235, false,
-					true),
-			new Photo(this, "Sine World", 6, new PVector(1.f, 0.5f, 1), new PVector(
-					0.0f, 2.0f, 0.0f), 0.f, -0.3f, 1789235, true, false),
-			new Photo(this, "Sunset", 7, new PVector(1.f, 0.1f, 1), new PVector(0.0f,
-					2.0f, 0.0f), 0.9f, 0.0f, 1789235, false, true),
-			new Photo(this, "rock", 0, new PVector(0.6666667f, 0.33333334f,
-					0.6666667f), new PVector(10.25f, 1.7044797f, 0.9553365f),
-					-0.046875f, -0.046875f, 1789235, false, true),
-			new Photo(this, "Crator II", 4, new PVector(0.6666667f, 0.33333334f,
-					0.6666667f), new PVector(11.495641f, 5.169949f, 8.202846f),
-					-1.6156223f, -0.42916673f, 1789235, true, false),
-			new Photo(this, "Pyramids", 5, new PVector(0.68041384f, 0.27216554f,
-					0.68041384f),
-					new PVector(6.9793053f, 0.736299f, 11.575281f), 4.284375f,
-					-0.025000066f, 1789235, true, false),
-			new Photo(this, "sunset ", 0, new PVector(0.70649046f, 0.07023498f,
-					0.70422894f), new PVector(3.6276436f, 1.5967011f,
-					-1.5997708f), 0.8718749f, -0.08749986f, 29369017, false,
-					true), };
+	HieghtField[] Scenes; /*
+						 * { new Terrain(this), new TerrainWithBuildings(this),
+						 * new BlockCity(this), /* new WetTerrain (this),
+						 * 
+						 * new Crator(this), new Egypt(this), new Wavey(this),
+						 * new SimplePlane(this), };
+						 */
+	Photo[] photographs; /*
+						 * { new Photo(this, "Terrain", 0, new PVector(1.f,
+						 * 0.5f, 1), new PVector( 0.0f, 2.0f, 0.0f), 0.f, -0.3f,
+						 * 7789235, false, false), new Photo(this, "valley", 0,
+						 * new PVector(0.78003854f, 0.24797048f, 0.57450026f),
+						 * new PVector(12.530619f, 0.7902899f, -2.8712194f),
+						 * 0.89374983f, 0.0072916746f, 1789235, true, true), new
+						 * Photo(this, "Terrain with Water", 3, new PVector(1.f,
+						 * 0.5f, 1), new PVector(0.0f, 2.0f, 0.0f), 0.f, -0.3f,
+						 * 1789235, false, false),
+						 * 
+						 * new Photo(this, "Block City", 2, new PVector(1.f,
+						 * 0.5f, 1), new PVector( 0.0f, 2.0f, 0.0f), 0.5f,
+						 * -0.3f, 1789235, false, false),
+						 * 
+						 * new Photo(this, "Crator", 4, new PVector(1.f, 0.5f,
+						 * 1), new PVector(0.0f, 2.0f, 0.0f), 0.f, -0.3f,
+						 * 1789235, true, false), new Photo(this, "Reflections",
+						 * 3, new PVector(0.48092172f, 0.26969612f,
+						 * 0.83425313f), new PVector(-0.012731299f, 1.2863867f,
+						 * 2.8419714f), 0.63750005f, -0.016666591f, 1789235,
+						 * false, true), new Photo(this, "Sine World", 6, new
+						 * PVector(1.f, 0.5f, 1), new PVector( 0.0f, 2.0f,
+						 * 0.0f), 0.f, -0.3f, 1789235, true, false), new
+						 * Photo(this, "Sunset", 7, new PVector(1.f, 0.1f, 1),
+						 * new PVector(0.0f, 2.0f, 0.0f), 0.9f, 0.0f, 1789235,
+						 * false, true), new Photo(this, "rock", 0, new
+						 * PVector(0.6666667f, 0.33333334f, 0.6666667f), new
+						 * PVector(10.25f, 1.7044797f, 0.9553365f), -0.046875f,
+						 * -0.046875f, 1789235, false, true), new Photo(this,
+						 * "Crator II", 4, new PVector(0.6666667f, 0.33333334f,
+						 * 0.6666667f), new PVector(11.495641f, 5.169949f,
+						 * 8.202846f), -1.6156223f, -0.42916673f, 1789235, true,
+						 * false), new Photo(this, "Pyramids", 5, new
+						 * PVector(0.68041384f, 0.27216554f, 0.68041384f), new
+						 * PVector(6.9793053f, 0.736299f, 11.575281f),
+						 * 4.284375f, -0.025000066f, 1789235, true, false), new
+						 * Photo(this, "sunset ", 0, new PVector(0.70649046f,
+						 * 0.07023498f, 0.70422894f), new PVector(3.6276436f,
+						 * 1.5967011f, -1.5997708f), 0.8718749f, -0.08749986f,
+						 * 29369017, false, true), };
+						 */
 
 	boolean g_HiQuality = false;
 	boolean g_usePost = false;
@@ -79,8 +87,11 @@ public class terrainmarch extends PApplet {
 	int g_PhotoIconSize = 30;
 	boolean g_EditWater = false;
 	float g_WaterHieght = 0.8f;
-	PolarCamera g_camControl = new PolarCamera(this, new PVector(0.0f, 2.0f, 0.0f),
-			0.f, -0.3f);
+	PolarCamera g_camControl = new PolarCamera(this, new PVector(0.0f, 2.0f,
+			0.0f), 0.f, -0.3f);
+	PhotoGen pics = new PhotoGen();
+	HieghtFieldGen hf = new HieghtFieldGen(this);
+	boolean state = false;
 
 	public PImage CreateScreen(int w, int h) {
 		return createImage(w, h, RGB);
@@ -89,11 +100,11 @@ public class terrainmarch extends PApplet {
 	public void CreateStrip(PImage sc, int xStart, int xEnd) {
 		float w = sc.width;
 		float h = sc.height;
-		Camera cam = new Camera(this, g_camControl.m_camPos, new PVector(0.0f, 1.0f,
-				0.0f), g_camControl.m_camDir, w, h, w);
+		Camera cam = new Camera(this, g_camControl.m_camPos, new PVector(0.0f,
+				1.0f, 0.0f), g_camControl.m_camDir, w, h, w);
 
-		Lighting lgt = new Lighting(this, g_sunDir, constrain(g_sunDir.y * 4, 0, 1),
-				g_useClouds);
+		Lighting lgt = new Lighting(this, g_sunDir, constrain(g_sunDir.y * 4,
+				0, 1), g_useClouds);
 
 		xEnd = (int) min(xEnd, w);
 		QualitySettings qs = new QualitySettings(this);
@@ -101,16 +112,21 @@ public class terrainmarch extends PApplet {
 		if (sc.width < 320)
 			qs.SetFast();
 
-		renderImage(qs, cam, sc, lgt, Scenes[g_SceneIdx % Scenes.length],
+		renderImage(qs, cam, sc, lgt, Scenes[0],
 				xStart, xEnd, g_usePost, g_useGamma);
 	}
 
 	public void setup() {
+		Test test = new Test(pics, this, hf);
+		test.drive();
+		this.photographs = pics.toArray();
+		this.Scenes = hf.toArray();
 		g_sunDir.normalize();
 		size(640, 480);
 		randomSeed(12789);
 		Reset();
 		PhotoSize = width / 4;
+		state = true;
 	}
 
 	boolean regenImage = false;
@@ -140,8 +156,8 @@ public class terrainmarch extends PApplet {
 			Reset();
 			return;
 		}
-		Camera cam = new Camera(this, g_camControl.m_camPos, new PVector(0.0f, 1.0f,
-				0.0f), g_camControl.m_camDir, width, height, width);
+		Camera cam = new Camera(this, g_camControl.m_camPos, new PVector(0.0f,
+				1.0f, 0.0f), g_camControl.m_camDir, width, height, width);
 		Ray ray = cam.generateRay(mouseX, height - mouseY);
 		float dds = ray.direction.dot(g_sunDir);
 		MoveSun = dds > 0.96f;
@@ -153,8 +169,9 @@ public class terrainmarch extends PApplet {
 			Reset();
 			return;
 		} else if (MoveSun) {
-			Camera cam = new Camera(this, g_camControl.m_camPos, new PVector(0.0f,
-					1.0f, 0.0f), g_camControl.m_camDir, width, height, width);
+			Camera cam = new Camera(this, g_camControl.m_camPos, new PVector(
+					0.0f, 1.0f, 0.0f), g_camControl.m_camDir, width, height,
+					width);
 			Ray ray = cam.generateRay(mouseX, height - mouseY);
 			g_sunDir.set(ray.direction);
 			g_sunDir.normalize();
@@ -232,74 +249,77 @@ public class terrainmarch extends PApplet {
 	int MiniPhotoSizeH = 60;
 
 	public void draw() {
-		boolean needRefresh = false;
-		boolean needNewSmallPhoto = g_CurrentPhotograph != -1
-				&& g_CurrentPhotograph < photographs.length;
+		if (state) {
+			boolean needRefresh = false;
+			boolean needNewSmallPhoto = g_CurrentPhotograph != -1
+					&& g_CurrentPhotograph < photographs.length;
+			g_CurrentPhotograph=-1;
+			if (g_CurrentPhotograph != -1) {
+				if (g_CurrentPhotograph == 0) {
+					g_selectScreen = CreateScreen(width / 2, height / 2);
+				}
+				if (g_CurrentPhotograph < photographs.length) {
+					g_workScreen = CreateScreen(MiniPhotoSizeW, MiniPhotoSizeH);
+					photographs[g_CurrentPhotograph].Set();
+					needRefresh = true;
+					CreateStrip(g_workScreen, 0, g_workScreen.height);//puts photo in box
+					g_selectScreen.copy(g_workScreen, 0, 0, g_workScreen.width,
+							g_workScreen.height,
+							(g_CurrentPhotograph % 4) * 80 + 10,
+							(g_CurrentPhotograph / 4) * 80 + 10,
+							g_workScreen.width, g_workScreen.height);
+					g_CurrentPhotograph=-1;
+					g_CurrentPhotograph++;
+				}
+				image(g_selectScreen, 0, 0, width, height);
 
-		if (g_CurrentPhotograph != -1) {
-			if (g_CurrentPhotograph == 0) {
-				g_selectScreen = CreateScreen(width / 2, height / 2);
-			}
-			if (g_CurrentPhotograph < photographs.length) {
-				g_workScreen = CreateScreen(MiniPhotoSizeW, MiniPhotoSizeH);
-				photographs[g_CurrentPhotograph].Set();
-				needRefresh = true;
-				CreateStrip(g_workScreen, 0, g_workScreen.height);
-				g_selectScreen.copy(g_workScreen, 0, 0, g_workScreen.width,
-						g_workScreen.height,
-						(g_CurrentPhotograph % 4) * 80 + 10,
-						(g_CurrentPhotograph / 4) * 80 + 10,
-						g_workScreen.width, g_workScreen.height);
-				g_CurrentPhotograph++;
-			}
-			image(g_selectScreen, 0, 0, width, height);
+				noFill();
+				stroke(~0);
+				int x = (mouseX / 160);
+				int y = (mouseY / 160);
+				rect(x * 160 + 20, y * 160 + 20, 120, 120);
+				//text(photographs[x + y].name, x * 160 + 20, y * 160 + 155);
+				return;
+			} else if (regenImage) {
+				if (g_workScreen == null || g_xloc >= g_workScreen.width) {
+					g_xloc = 0;
+					g_workScreen = CreateScreen(width / g_res, height / g_res);
+					g_res >>= 1;
+				}
+				int numPixels = g_workScreen.width * g_workScreen.height;
+				int numSteps = (int) ceil((float) numPixels
+						/ (float) g_maxPixelStep);
+				int step = g_workScreen.width / numSteps;
 
+				CreateStrip(g_workScreen, g_xloc, g_xloc + step);
+				g_xloc += step;
+				if (g_xloc >= g_workScreen.width) {
+					g_screen = g_workScreen;
+					needRefresh = true;
+					if (g_res == 0)
+						regenImage = false;
+				}
+			}
+
+			if (needRefresh) {
+				assert (g_screen != null);
+				image(g_screen, 0, 0, width, height);
+
+				// draw photo Icon
+				//image(g_selectScreen, 0, 0, g_PhotoIconSize, g_PhotoIconSize);
+
+				fill(~0);
+				text("Time For Image :"
+						+ (int) ((float) millis() / 1000.0f - g_renderTime)
+						+ " secs | fps " + (int) frameRate + "| HQ "
+						+ g_HiQuality + "| Image Res " + g_screen.width
+						+ "| Clouds " + g_useClouds, g_PhotoIconSize + 10, 20);
+			}
 			noFill();
-			stroke(~0);
-			int x = (mouseX / 160);
-			int y = (mouseY / 160);
-			rect(x * 160 + 20, y * 160 + 20, 120, 120);
-			text(photographs[x + y * 4].name, x * 160 + 20, y * 160 + 155);
-			return;
-		} else if (regenImage) {
-			if (g_workScreen == null || g_xloc >= g_workScreen.width) {
-				g_xloc = 0;
-				g_workScreen = CreateScreen(width / g_res, height / g_res);
-				g_res >>= 1;
-			}
-			int numPixels = g_workScreen.width * g_workScreen.height;
-			int numSteps = (int) ceil((float) numPixels
-					/ (float) g_maxPixelStep);
-			int step = g_workScreen.width / numSteps;
-
-			CreateStrip(g_workScreen, g_xloc, g_xloc + step);
-			g_xloc += step;
-			if (g_xloc >= g_workScreen.width) {
-				g_screen = g_workScreen;
-				needRefresh = true;
-				if (g_res == 0)
-					regenImage = false;
-			}
+			stroke(mouseX < g_PhotoIconSize && mouseY < g_PhotoIconSize ? ~0
+					: 0);
+			//rect(0, 0, g_PhotoIconSize, g_PhotoIconSize);
 		}
-
-		if (needRefresh) {
-			assert (g_screen != null);
-			image(g_screen, 0, 0, width, height);
-
-			// draw photo Icon
-			image(g_selectScreen, 0, 0, g_PhotoIconSize, g_PhotoIconSize);
-
-			fill(~0);
-			text("Time For Image :"
-					+ (int) ((float) millis() / 1000.0f - g_renderTime)
-					+ " secs | fps " + (int) frameRate + "| HQ " + g_HiQuality
-					+ "| Image Res " + g_screen.width + "| Clouds "
-					+ g_useClouds, g_PhotoIconSize + 10, 20);
-		}
-		noFill();
-		stroke(mouseX < g_PhotoIconSize && mouseY < g_PhotoIconSize ? ~0 : 0);
-		rect(0, 0, g_PhotoIconSize, g_PhotoIconSize);
-
 	}
 
 	// lighting
@@ -477,9 +497,10 @@ public class terrainmarch extends PApplet {
 	int g_numHieghtSamples = 0;
 	int g_numHieghtShadowSamples = 0;
 
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////
-	////////////////////////TODO most important method////////////////////////////////////////////////////////////
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// ///////////////////////////////////////////////////////////////////////////////////////////////////////
+	// //////////////////////TODO most important
+	// method////////////////////////////////////////////////////////////
+	// ///////////////////////////////////////////////////////////////////////////////////////////////////////
 	public float castRay(QualitySettings qs, HieghtField hgts, PVector ro,
 			PVector rd, float mint, float maxt, float erratio) {
 		float dt = max(qs.rayDeltaRatio * mint, 0.001f);
@@ -504,8 +525,9 @@ public class terrainmarch extends PApplet {
 		}
 		return -1.f;
 	}
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// ///////////////////////////////////////////////////////////////////////////////////////////////////////
+	// ///////////////////////////////////////////////////////////////////////////////////////////////////////
 	public float bSample(HieghtField hgts, float x, float z, float bs) {
 		return hgts.GetHieght(x, z) + detailNoise(x, z) * bs;
 	}

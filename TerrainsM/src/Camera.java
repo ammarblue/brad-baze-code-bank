@@ -1,6 +1,5 @@
 import processing.core.PVector;
 
-
 class Camera {
 	/**
 	 * 
@@ -12,8 +11,8 @@ class Camera {
 	PVector uvw_v;
 	PVector uvw_w;
 
-	public Camera(terrainmarch terrainmarch, PVector eye, PVector up, PVector gaze, float resX,
-			float resY, float d) {
+	public Camera(terrainmarch terrainmarch, PVector eye, PVector up,
+			PVector gaze, float resX, float resY, float d) {
 		Camera = terrainmarch;
 		position = eye;
 		uvw_v = up;

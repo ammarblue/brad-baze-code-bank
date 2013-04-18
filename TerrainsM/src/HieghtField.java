@@ -1,6 +1,5 @@
 import processing.core.PVector;
 
-
 interface HieghtField {
 	public float GetHieght(float x, float z);
 
@@ -12,5 +11,8 @@ interface HieghtField {
 	public float GetWaterHieght();
 
 	public float GetBumpStrength(PVector p);
+
 	// float GetMaxHgt();
+
+	public void addTerrainmarch(terrainmarch in);
 }

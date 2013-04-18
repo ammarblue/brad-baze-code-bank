@@ -1,11 +1,10 @@
 import processing.core.PVector;
 
-
 class Wavey implements HieghtField {
 	/**
 	 * 
 	 */
-	private final terrainmarch Wavey;
+	private terrainmarch Wavey;
 
 	/**
 	 * @param terrainmarch
@@ -13,7 +12,7 @@ class Wavey implements HieghtField {
 	Wavey(terrainmarch terrainmarch) {
 		Wavey = terrainmarch;
 	}
-
+	Wavey(){}
 	public float GetHieght(float x, float z) {
 		return terrainmarch.sin(x) * terrainmarch.sin(z) * 1.5f;
 	}
@@ -34,6 +33,11 @@ class Wavey implements HieghtField {
 
 	public float GetBumpStrength(PVector p) {
 		return 0.05f;
+	}
+
+	@Override
+	public void addTerrainmarch(terrainmarch in) {
+		Wavey = in;
 	}
 
 }

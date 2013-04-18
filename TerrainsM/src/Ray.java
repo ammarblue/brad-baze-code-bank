@@ -1,6 +1,5 @@
 import processing.core.PVector;
 
-
 class Ray {
 	/**
 	 * 

@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.2" icons="true" automaticImage="JPEG" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="HieghtFieldGen" project="TerrainsM" file="/TerrainsM/src/HieghtFieldGen.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="167" x="1785" y="1599"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <interface id="2" language="java" name="HieghtField" project="TerrainsM" file="/TerrainsM/src/HieghtField.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="207" x="2693" y="1846"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </interface>  
+  <class id="3" language="java" name="Egypt" project="TerrainsM" file="/TerrainsM/src/Egypt.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="225" width="207" x="2199" y="25"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="Camera" project="TerrainsM" file="/TerrainsM/src/Camera.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="324" x="438" y="25"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="Photo" project="TerrainsM" file="/TerrainsM/src/Photo.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="279" width="391" x="1724" y="1846"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="PolarCamera" project="TerrainsM" file="/TerrainsM/src/PolarCamera.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="244" x="2013" y="1599"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="SimplePlane" project="TerrainsM" file="/TerrainsM/src/SimplePlane.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="207" x="3187" y="25"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="Test" project="TerrainsM" file="/TerrainsM/src/Test.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="240" x="158" y="25"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="Crator" project="TerrainsM" file="/TerrainsM/src/Crator.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="207" x="3434" y="25"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="QualitySettings" project="TerrainsM" file="/TerrainsM/src/QualitySettings.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="167" x="802" y="25"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="WetTerrain" project="TerrainsM" file="/TerrainsM/src/WetTerrain.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="207" x="1684" y="25"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="GammaTable" project="TerrainsM" file="/TerrainsM/src/GammaTable.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="156" x="2297" y="1599"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="Lighting" project="TerrainsM" file="/TerrainsM/src/Lighting.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="400" x="1009" y="25"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="TerrainWithBuildings" project="TerrainsM" 
+    file="/TerrainsM/src/TerrainWithBuildings.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="207" x="1931" y="25"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="Wavey" project="TerrainsM" file="/TerrainsM/src/Wavey.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="207" x="2446" y="25"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="BlockCity" project="TerrainsM" file="/TerrainsM/src/BlockCity.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="207" x="2940" y="25"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="CityScape" project="TerrainsM" file="/TerrainsM/src/CityScape.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="207" x="2693" y="25"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="PhotoGen" project="TerrainsM" file="/TerrainsM/src/PhotoGen.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="432" x="972" y="1599"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="terrainmarch" project="TerrainsM" file="/TerrainsM/src/terrainmarch.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="1251" width="471" x="1931" y="308"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="Ray" project="TerrainsM" file="/TerrainsM/src/Ray.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="195" x="1449" y="25"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="FileRead" project="TerrainsM" file="/TerrainsM/src/FileRead.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="122" x="829" y="308"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="Terrain" project="TerrainsM" file="/TerrainsM/src/Terrain.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="207" x="2159" y="-222"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" accessors="true" 
+      visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <association id="23">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="24" name="store"/>      
+      <multiplicity id="25" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="26">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="27" name="CityScape"/>      
+      <multiplicity id="28" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="29">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <association id="30">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="31" name="SimplePlane"/>      
+      <multiplicity id="32" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="33">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="34" name="terrainmarch"/>      
+      <multiplicity id="35" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="36">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="37" name="t"/>      
+      <multiplicity id="38" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="39">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="40" name="GammaTable"/>      
+      <multiplicity id="41" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="42">    
+    <bendpoint x="1754" y="1599"/>    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="43" name="terrainmarch"/>      
+      <multiplicity id="44" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="45">    
+    <bendpoint x="2168" y="25"/>    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="46" name="Terrain"/>      
+      <multiplicity id="47" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="48">    
+    <bendpoint x="2578" y="308"/>    
+    <bendpoint x="2578" y="1599"/>    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <realization id="49">    
+    <bendpoint x="2949" y="308"/>    
+    <bendpoint x="2949" y="1599"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <association id="50">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="51" name="TerrainWithBuildings"/>      
+      <multiplicity id="52" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="53">    
+    <bendpoint x="2826" y="308"/>    
+    <bendpoint x="2826" y="1599"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <association id="54">    
+    <bendpoint x="981" y="308"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="55" name="p"/>      
+      <multiplicity id="56" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="57">    
+    <bendpoint x="3671" y="25"/>    
+    <bendpoint x="3671" y="308"/>    
+    <bendpoint x="3671" y="1599"/>    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <association id="58">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="59" name="pics"/>      
+      <multiplicity id="60" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="61">    
+    <bendpoint x="1002" y="308"/>    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="62" name="hf"/>      
+      <multiplicity id="63" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="64">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="65" name="pics"/>      
+      <multiplicity id="66" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="67">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="68" name="PolarCamera"/>      
+      <multiplicity id="69" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="70">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="71" name="Crator"/>      
+      <multiplicity id="72" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="73">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="74" name="g_camControl"/>      
+      <multiplicity id="75" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="76">    
+    <bendpoint x="1982" y="1599"/>    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="77" name="Scenes"/>      
+      <multiplicity id="78" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="79">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="80" name="hf"/>      
+      <multiplicity id="81" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="82">    
+    <bendpoint x="1733" y="1599"/>    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="83" name="photographs"/>      
+      <multiplicity id="84" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="85">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="86" name="Wavey"/>      
+      <multiplicity id="87" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="88">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="89" name="Camera"/>      
+      <multiplicity id="90" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="91">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="92" name="t"/>      
+      <multiplicity id="93" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="94">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="95" name="WetTerrain"/>      
+      <multiplicity id="96" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="97">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="98" name="hf"/>      
+      <multiplicity id="99" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="100">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="22"/>  
+  </generalization>  
+  <association id="101">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="102" name="Ray"/>      
+      <multiplicity id="103" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="104">    
+    <bendpoint x="2483" y="308"/>    
+    <bendpoint x="2483" y="1599"/>    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <realization id="105">    
+    <bendpoint x="3073" y="308"/>    
+    <bendpoint x="3073" y="1599"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <association id="106">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="107" name="QualitySettings"/>      
+      <multiplicity id="108" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="109">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="110" name="g_GTable"/>      
+      <multiplicity id="111" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="112">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="113" name="BlockCity"/>      
+      <multiplicity id="114" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="115">    
+    <bendpoint x="2702" y="308"/>    
+    <bendpoint x="2702" y="1599"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <association id="116">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="117" name="Egypt"/>      
+      <multiplicity id="118" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,6 +1,5 @@
 import processing.core.PVector;
 
-
 class PolarCamera {
 	/**
 	 * 
@@ -22,8 +21,9 @@ class PolarCamera {
 	public void update(float dy, float dz) {
 		m_CamAngleX += dy;
 		m_CamAngleY += -dz;
-		m_camDir = new PVector(terrainmarch.sin(m_CamAngleX) * terrainmarch.cos(m_CamAngleY),
-				terrainmarch.sin(m_CamAngleY), terrainmarch.cos(m_CamAngleX) * terrainmarch.cos(m_CamAngleY));
+		m_camDir = new PVector(terrainmarch.sin(m_CamAngleX)
+				* terrainmarch.cos(m_CamAngleY), terrainmarch.sin(m_CamAngleY),
+				terrainmarch.cos(m_CamAngleX) * terrainmarch.cos(m_CamAngleY));
 	}
 
 	public void forward(float v) {
