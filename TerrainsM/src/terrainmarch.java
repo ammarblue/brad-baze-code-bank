@@ -112,13 +112,13 @@ public class terrainmarch extends PApplet {
 		if (sc.width < 320)
 			qs.SetFast();
 
-		renderImage(qs, cam, sc, lgt, Scenes[0],
-				xStart, xEnd, g_usePost, g_useGamma);
+		renderImage(qs, cam, sc, lgt, Scenes[0], xStart, xEnd, g_usePost,
+				g_useGamma);
+
 	}
 
 	public void setup() {
 		Test test = new Test(pics, this, hf);
-		test.drive();
 		this.photographs = pics.toArray();
 		this.Scenes = hf.toArray();
 		g_sunDir.normalize();
@@ -126,7 +126,7 @@ public class terrainmarch extends PApplet {
 		randomSeed(12789);
 		Reset();
 		PhotoSize = width / 4;
-		state = true;
+		//state=true;
 	}
 
 	boolean regenImage = false;
@@ -253,7 +253,7 @@ public class terrainmarch extends PApplet {
 			boolean needRefresh = false;
 			boolean needNewSmallPhoto = g_CurrentPhotograph != -1
 					&& g_CurrentPhotograph < photographs.length;
-			g_CurrentPhotograph=-1;
+			g_CurrentPhotograph = -1;
 			if (g_CurrentPhotograph != -1) {
 				if (g_CurrentPhotograph == 0) {
 					g_selectScreen = CreateScreen(width / 2, height / 2);
@@ -262,23 +262,24 @@ public class terrainmarch extends PApplet {
 					g_workScreen = CreateScreen(MiniPhotoSizeW, MiniPhotoSizeH);
 					photographs[g_CurrentPhotograph].Set();
 					needRefresh = true;
-					CreateStrip(g_workScreen, 0, g_workScreen.height);//puts photo in box
-					g_selectScreen.copy(g_workScreen, 0, 0, g_workScreen.width,
-							g_workScreen.height,
-							(g_CurrentPhotograph % 4) * 80 + 10,
-							(g_CurrentPhotograph / 4) * 80 + 10,
-							g_workScreen.width, g_workScreen.height);
-					g_CurrentPhotograph=-1;
-					g_CurrentPhotograph++;
+					CreateStrip(g_workScreen, 0, g_workScreen.height);
+					/*
+					 * g_selectScreen.copy(g_workScreen, 0, 0,
+					 * g_workScreen.width, g_workScreen.height,
+					 * (g_CurrentPhotograph % 4) * 80 + 10, (g_CurrentPhotograph
+					 * / 4) * 80 + 10, g_workScreen.width, g_workScreen.height);
+					 */
+					// g_CurrentPhotograph=-1;
+					// g_CurrentPhotograph++;
 				}
-				image(g_selectScreen, 0, 0, width, height);
-
+				// image(g_selectScreen, 0, 0, width, height);
+				// g_workScreen.save("test.jpg");
 				noFill();
 				stroke(~0);
 				int x = (mouseX / 160);
 				int y = (mouseY / 160);
-				rect(x * 160 + 20, y * 160 + 20, 120, 120);
-				//text(photographs[x + y].name, x * 160 + 20, y * 160 + 155);
+				// rect(x * 160 + 20, y * 160 + 20, 120, 120);
+				// text(photographs[x + y].name, x * 160 + 20, y * 160 + 155);
 				return;
 			} else if (regenImage) {
 				if (g_workScreen == null || g_xloc >= g_workScreen.width) {
@@ -306,7 +307,8 @@ public class terrainmarch extends PApplet {
 				image(g_screen, 0, 0, width, height);
 
 				// draw photo Icon
-				//image(g_selectScreen, 0, 0, g_PhotoIconSize, g_PhotoIconSize);
+				// image(g_selectScreen, 0, 0, g_PhotoIconSize,
+				// g_PhotoIconSize);
 
 				fill(~0);
 				text("Time For Image :"
@@ -318,7 +320,7 @@ public class terrainmarch extends PApplet {
 			noFill();
 			stroke(mouseX < g_PhotoIconSize && mouseY < g_PhotoIconSize ? ~0
 					: 0);
-			//rect(0, 0, g_PhotoIconSize, g_PhotoIconSize);
+			// rect(0, 0, g_PhotoIconSize, g_PhotoIconSize);
 		}
 	}
 
