@@ -72,7 +72,7 @@ public class SQLConnect {
 		return q;
 	}
 
-	public Object[][] getData(){
+	public Object[][] getAllData(){
 		Object[][] data;
 		try {
 			rs = stmt.executeQuery("select count(PK) from contact");
@@ -84,12 +84,29 @@ public class SQLConnect {
 				Object[] temp = new Object[5];
 				for (int i = 1; i < 6; i++) {
 					data[rs.getRow() - 1][i - 1] = rs.getObject(i + 1);
+					
 				}
 			}
 			return data;
 		} catch (SQLException e) {
 			e.printStackTrace();
 			System.out.println("Error on data get");
+		}
+		return null;
+	}
+	public Object[] getData(){
+		Object[] temp=new Object[5];
+		try{
+			rs=stmt.executeQuery("select * from contact order by PK desc limit 1");
+			while(rs.next()){
+				for(int i=1;i<6;i++){
+					temp[i-1]=rs.getObject(i+1);
+				}
+			}
+			return temp;
+		}catch(SQLException e){
+			e.printStackTrace();
+			System.out.println("SQL ERROR ON READ LAST");
 		}
 		return null;
 	}

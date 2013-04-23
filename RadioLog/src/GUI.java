@@ -33,7 +33,8 @@ public class GUI extends JFrame implements ActionListener {
 	JTextField CallSign, Freq, Time, DATE;
 	JButton Save, TimeStamp;
 	JTable Tdata;
-	GridBagConstraints Pcon, Mcon;
+	DefaultTableModel tm;
+	GridBagConstraints Pcon, Mcon, Ccon;
 	String[] colName = { "Call Sign", "Date", "Time", "Freq", "Mode" };
 	SQLConnect SQL = new SQLConnect();
 
@@ -148,7 +149,8 @@ public class GUI extends JFrame implements ActionListener {
 		Save.addActionListener(this);
 		PContact.add(Save, Pcon);
 
-		Tdata = new JTable(SQL.getData(), colName);//TODO need way to refresh table
+		Tdata = new JTable(new DefaultTableModel(SQL.getAllData(),colName));//TODO need way to refresh table
+		tm=(DefaultTableModel) Tdata.getModel();
 		JScrollPane STabel = new JScrollPane(Tdata);
 		Tdata.setPreferredScrollableViewportSize(new Dimension(450, 10));
 		PRight.add(STabel, BorderLayout.CENTER);
@@ -163,6 +165,7 @@ public class GUI extends JFrame implements ActionListener {
 				DATE.setText("");
 				Time.setText("");
 				Freq.setText("");
+				tm.addRow(SQL.getData());
 			}
 		} else if (e.getSource() == TimeStamp) {
 			Date dtemp = new Date();
