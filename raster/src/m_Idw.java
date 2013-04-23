@@ -2,6 +2,7 @@
 public class m_Idw {
 	int _x,_y,_t,_n;
 	int _points[][][];
+	m_Idw_Error er=new m_Idw_Error();
 	m_Idw(){}
 	
 	public double _Idw(int n,int x,int y,int t){
