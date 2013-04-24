@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class HieghtFieldGen {
-	ArrayList<HieghtField> hf = new ArrayList();
+	ArrayList<HieghtField> hf = new ArrayList<HieghtField>();
 	terrainmarch t;
 
 	HieghtFieldGen() {
