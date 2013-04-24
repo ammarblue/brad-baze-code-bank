@@ -92,6 +92,7 @@ public class terrainmarch extends PApplet {
 	PhotoGen pics = new PhotoGen();
 	HieghtFieldGen hf = new HieghtFieldGen(this);
 	boolean state = false;
+	boolean sig=false;
 
 	public PImage CreateScreen(int w, int h) {
 		return createImage(w, h, RGB);
@@ -119,14 +120,16 @@ public class terrainmarch extends PApplet {
 
 	public void setup() {
 		Test test = new Test(pics, this, hf);
-		this.photographs = pics.toArray();
-		this.Scenes = hf.toArray();
+		photographs = pics.toArray();
+		Scenes = hf.toArray();
 		g_sunDir.normalize();
 		size(640, 480);
 		randomSeed(12789);
 		Reset();
 		PhotoSize = width / 4;
-		//state=true;
+		if(sig){
+			state=true;
+		}
 	}
 
 	boolean regenImage = false;
@@ -665,8 +668,8 @@ public class terrainmarch extends PApplet {
 							c.y * 255.f, c.z * 255.f);
 			}
 		}
-		println("| NumSamples " + g_numHieghtSamples + "| Shadow Samples "
-				+ g_numHieghtShadowSamples);
+		/*println("| NumSamples " + g_numHieghtSamples + "| Shadow Samples "
+				+ g_numHieghtShadowSamples);*/
 	}
 
 	public PVector lerp(PVector a, PVector b, float t) {

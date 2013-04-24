@@ -31,6 +31,7 @@ class Photo {
 		noiseSeedValue = noiseS;
 		applyPost = post;
 		useClouds = uc;
+		Set();
 	}
 
 	public void Output() {
