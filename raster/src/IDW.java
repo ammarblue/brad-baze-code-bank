@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class IDW {
 	day[] year;
 	double x, y, v;
-	int n, p,t;
+	int n, p, t;
 	point[] nab;
 
 	IDW() {
@@ -13,14 +13,78 @@ public class IDW {
 		year = in;
 	}
 
-	IDW(day[] in, double x, double y,int t, int n, int p) {// n number of
-																// nab
+	IDW(day[] in, double x, double y, int t, int n, int p) {// n number of
+															// nab
 		year = in;
 		this.x = x;
 		this.y = y;
 		this.t = t;
 		this.n = n;
 		this.p = p;
+	}
+
+	public day[] getYear() {
+		return year;
+	}
+
+	public void setYear(day[] year) {
+		this.year = year;
+	}
+
+	public double getX() {
+		return x;
+	}
+
+	public void setX(double x) {
+		this.x = x;
+	}
+
+	public double getY() {
+		return y;
+	}
+
+	public void setY(double y) {
+		this.y = y;
+	}
+
+	public double getV() {
+		return v;
+	}
+
+	public void setV(double v) {
+		this.v = v;
+	}
+
+	public int getN() {
+		return n;
+	}
+
+	public void setN(int n) {
+		this.n = n;
+	}
+
+	public int getP() {
+		return p;
+	}
+
+	public void setP(int p) {
+		this.p = p;
+	}
+
+	public int getT() {
+		return t;
+	}
+
+	public void setT(int t) {
+		this.t = t;
+	}
+
+	public point[] getNab() {
+		return nab;
+	}
+
+	public void setNab(point[] nab) {
+		this.nab = nab;
 	}
 
 	public void findN() {
