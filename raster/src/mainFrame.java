@@ -75,12 +75,16 @@ public class mainFrame extends JFrame {
 				counter++;
 			}
 		}
-		//IDW test=new IDW(year,-82.8,32.0,0,1,2);
-		//System.out.println(test.idw());
-		double[] tempx={-82.6,-84.2,-100.34,-96.34};
+		DataRead test=new DataRead(year);
+		//test.Write();
+		//test.ReadforError();
+		//IDW test=new IDW(year,year[3].points.get(8).x,year[3].points.get(8).y,3,5,1);
+		//System.out.println("x="+year[3].points.get(8).x+" y="+year[3].points.get(8).y+" v="+year[3].points.get(8).value);
+		//System.out.println(test.findKnown(year[3].points.get(8)));
+		/*double[] tempx={-82.6,-84.2,-100.34,-96.34};
 		double[] tempy={33.45,43.56,36.45,40.67,39.54};
 		IDWanimation test=new IDWanimation(year,tempx,tempy); 
-		test.step(0, 2, 3).printOut();
+		test.step(0, 2, 5).printOut();*/
 		setTitle(NAME);
 		setMinimumSize(new Dimension(WIDTH, HEIGHT));
 		setMaximumSize(new Dimension(WIDTH, HEIGHT));
