@@ -22,6 +22,11 @@ public class IDW {
 		this.n = n;
 		this.p = p;
 	}
+	IDW(day[] in, double x,double y){
+		year=in;
+		this.x=x;
+		this.y=y;
+	}
 
 	public day[] getYear() {
 		return year;
@@ -97,10 +102,20 @@ public class IDW {
 			int s = 0;
 			year[t].points.get(i).d = dis(year[t].points.get(i).x,
 					year[t].points.get(i).y);
+			if(year[t].points.get(i).d==0){
+				break;
+			}
 			while (s < n) {
-				if (year[t].points.get(i).d < N[s].d) {
-					N[s] = year[t].points.get(i);
-					break;
+				if (year[t].points.get(i).d < N[s].d ) {
+					for(int z=s;z<n;z++){
+						if(N[z].d==N[s].d){
+							s=n;
+							break;
+						}
+					}
+					if(s<n){
+						N[s] = year[t].points.get(i);
+					}
 				} else {
 					s++;
 					continue;
@@ -122,9 +137,9 @@ public class IDW {
 		findN();
 		v = 0;
 		for (int i = 0; i < nab.length; i++) {
-			System.out.println("Nab" + i + " x=" + nab[i].x + " y=" + nab[i].y
+			/*System.out.println("Nab" + i + " x=" + nab[i].x + " y=" + nab[i].y
 					+ " t=" + nab[i].day + " d=" + nab[i].d + " v="
-					+ nab[i].value);
+					+ nab[i].value);*/
 			v += lambda(i) * nab[i].value;
 		}
 		return v;
@@ -138,5 +153,53 @@ public class IDW {
 		}
 		L /= l;
 		return L;
+	}
+	public double findKnown(point in){
+		point temp=in;
+		year[t].points.remove(in);
+		double stem=idw();
+		year[t].points.add(temp);
+		return stem;
+	}
+	public String forPrint(point in){
+		String temp="";
+		temp+=in.value+" ";
+		this.n=3;
+		this.p=1;
+		temp+=Double.toString(findKnown(in));
+		temp+=" ";
+		this.n=3;
+		this.p=2;
+		temp+=Double.toString(findKnown(in));
+		temp+=" ";
+		this.n=3;
+		this.p=3;
+		temp+=Double.toString(findKnown(in));
+		temp+=" ";
+		this.n=4;
+		this.p=1;
+		temp+=Double.toString(findKnown(in));
+		temp+=" ";
+		this.n=4;
+		this.p=2;
+		temp+=Double.toString(findKnown(in));
+		temp+=" ";
+		this.n=4;
+		this.p=3;
+		temp+=Double.toString(findKnown(in));
+		temp+=" ";
+		this.n=5;
+		this.p=1;
+		temp+=Double.toString(findKnown(in));
+		temp+=" ";
+		this.n=5;
+		this.p=2;
+		temp+=Double.toString(findKnown(in));
+		temp+=" ";
+		this.n=5;
+		this.p=3;
+		temp+=Double.toString(findKnown(in));
+		temp+=" \n";
+		return temp;
 	}
 }
