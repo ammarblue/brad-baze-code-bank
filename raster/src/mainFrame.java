@@ -75,8 +75,12 @@ public class mainFrame extends JFrame {
 				counter++;
 			}
 		}
-		IDW test=new IDW(year,-82.8,32.0,0,1,2);
-		System.out.println(test.idw());
+		//IDW test=new IDW(year,-82.8,32.0,0,1,2);
+		//System.out.println(test.idw());
+		double[] tempx={-82.6,-84.2,-100.34,-96.34};
+		double[] tempy={33.45,43.56,36.45,40.67,39.54};
+		IDWanimation test=new IDWanimation(year,tempx,tempy); 
+		test.step(0, 2, 3).printOut();
 		setTitle(NAME);
 		setMinimumSize(new Dimension(WIDTH, HEIGHT));
 		setMaximumSize(new Dimension(WIDTH, HEIGHT));
