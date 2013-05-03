@@ -103,10 +103,12 @@ public class Console extends PApplet {
 		}
 		case ENTER:
 		case RETURN:
-			if(CurrentLine.compareTo("FILE")==0){
-				DataRead r=new DataRead();
+			if (CurrentLine.startsWith("FILE")) {
+				DataRead r = new DataRead(CurrentLine.substring(5));
 				r.Read();
-				CurrentLine=r.text;
+				CurrentLine = r.text;
+			} else if (CurrentLine.compareTo("EXIT") == 0) {
+				System.exit(0);
 			}
 			Write(Prompt + CurrentLine);
 			LastCommand = CurrentLine;
