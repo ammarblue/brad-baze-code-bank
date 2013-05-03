@@ -103,6 +103,11 @@ public class Console extends PApplet {
 		}
 		case ENTER:
 		case RETURN:
+			if(CurrentLine.compareTo("FILE")==0){
+				DataRead r=new DataRead();
+				r.Read();
+				CurrentLine=r.text;
+			}
 			Write(Prompt + CurrentLine);
 			LastCommand = CurrentLine;
 			if (App != null) {
