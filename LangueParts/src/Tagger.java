@@ -188,8 +188,7 @@ public void setup()
 public void draw()
 {
 	background(0);
-	stroke(255);
-	
+	fill(0,255,0);
 	Console.Draw();
 }
 
