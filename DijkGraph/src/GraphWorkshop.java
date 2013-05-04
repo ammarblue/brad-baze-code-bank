@@ -2,8 +2,6 @@
 import processing.core.PApplet;
 import processing.core.PVector;
 
-/* OpenProcessing Tweak of *@*http://www.openprocessing.org/sketch/65275*@* */
-/* !do not delete the line above, required for linking your tweak if you re-upload */
 // Graph Workshop
 // David Balash 2012  
 
