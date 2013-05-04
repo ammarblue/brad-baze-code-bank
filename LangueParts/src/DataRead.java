@@ -17,7 +17,8 @@ public class DataRead {
 	public void Read() {
 		Scanner in;
 		if (_Fname.compareTo("") == 0) {
-			_Fname = "test.txt";
+			System.err.println("Need file name");
+			return;
 		}
 		_in = new File(_Fname);
 		try {
