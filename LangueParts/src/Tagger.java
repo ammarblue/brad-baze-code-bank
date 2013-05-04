@@ -14,7 +14,7 @@ public class Tagger extends PApplet implements Console.Application {
 	public TagSet Tags;
 	private Dictionary Lexicon;
 	private Bigram LanguageModel;
-
+	boolean state=false;
 	public Tagger() {
 		InputStream tag_input_stream = getClass().getResourceAsStream(
 				"data/TagSet.txt");
@@ -69,17 +69,38 @@ public class Tagger extends PApplet implements Console.Application {
 		}
 
 		int[] tags = LanguageModel.Viterbi(words);
+		String tagged_sentence = "";
+		for (int i = 0; i < tokens.length; ++i) {
+			tagged_sentence = tagged_sentence + tokens[i] + "/"
+					+ Tags.GetStringFromIndex(tags[i]) + " ";
+		}
+		Console.Write("\n" + tagged_sentence + "\n");
+	}
+	public void ProcessStats(String sentence,int range,String type){
+		String[] tokens = Tokeniser.Tokenise(sentence);
+		Word[] words = new Word[tokens.length];
+		for (int i = 0; i < tokens.length; ++i) {
+			String lookup_word = tokens[i].toLowerCase();
+			words[i] = Lexicon.GetWord(lookup_word);
+
+			if (words[i] == null) {
+				long tags = GuessPennTags(tokens[i]);
+				words[i] = new Word(tokens[i], tags);
+			}
+		}
+
+		int[] tags = LanguageModel.Viterbi(words);
 		Stats s=new Stats(this,tokens,tags,words);
 		String tagged_sentence = "";
 		for (int i = 0; i < tokens.length; ++i) {
 			tagged_sentence = tagged_sentence + tokens[i] + "/"
 					+ Tags.GetStringFromIndex(tags[i]) + " ";
 		}
-		s.calc();
-		System.out.println(s.occur(2, "NN"));
-		Console.Write("\n" + tagged_sentence + "\n");
+		s.calc();//calculates stats
+		Console.Write("Type: "+type);
+		Console.Write("Top "+range+" selected");
+		Console.Write("\n"+s.occur(range, type));//looks for occurrences being top 2 of nouns
 	}
-
 	public long GuessPennTags(String word) {
 		long bit_field = 0;
 
@@ -177,6 +198,8 @@ public class Tagger extends PApplet implements Console.Application {
 		Console.Initialise(this, tagger, font, 16);
 
 		Console.Write("Type a sentence to tag, or press <TAB> for an example.\n");
+		Console.Write("Use FILE to feed in test file (test.txt)\n");
+		Console.Write("Once data has be read type STATS for statistics\n");
 	}
 
 	public void draw() {

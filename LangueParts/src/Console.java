@@ -11,6 +11,8 @@ public class Console extends PApplet {
 	public interface Application {
 		public void Process(String s);
 
+		public void ProcessStats(String s, int r, String t);
+
 		public String TabComplete(String s);
 	}
 
@@ -103,17 +105,27 @@ public class Console extends PApplet {
 		}
 		case ENTER:
 		case RETURN:
-			if (CurrentLine.startsWith("FILE")) {
-				DataRead r = new DataRead(CurrentLine.substring(5));
-				r.Read();
-				CurrentLine = r.text;
-			} else if (CurrentLine.compareTo("EXIT") == 0) {
-				System.exit(0);
-			}
-			Write(Prompt + CurrentLine);
-			LastCommand = CurrentLine;
-			if (App != null) {
-				App.Process(CurrentLine);
+			if (CurrentLine.startsWith("STATS")&&LastCommand.compareTo("")!=0) {
+				int a=2;
+				String b="NN";
+				//create regx to read in from comandline
+				Write(Prompt+CurrentLine);
+				if(App!=null){
+					App.ProcessStats(LastCommand, a, b);
+				}
+			} else {
+				if (CurrentLine.startsWith("FILE")) {
+					DataRead r = new DataRead(CurrentLine.substring(5));
+					r.Read();
+					CurrentLine = r.text;
+				} else if (CurrentLine.compareTo("EXIT") == 0) {
+					System.exit(0);
+				}
+				Write(Prompt + CurrentLine);
+				LastCommand = CurrentLine;
+				if (App != null) {
+					App.Process(CurrentLine);
+				}
 			}
 			CurrentLine = "";
 			CaratPosition = -1;
