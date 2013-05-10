@@ -64,13 +64,15 @@ class HWSimulatedDisk implements Runnable {
 			}
 		}
 		// Delay for the seek, latency and transfer.
-		// For now, all delays total 500 ms.
-		SIM.Trace(SIM.TraceHWDisk, "SimulatedDisk: sleep 500");
+		SIM.Trace(SIM.TraceHWDisk, "SimulatedDisk");
 
-		// Delay for seek, 500 ms for now
 		try {
-			Thread.currentThread().sleep(500);
+			int delay=(int)(Math.random()*100);
+			Thread.currentThread();
+			Thread.sleep(delay);
 		} catch (InterruptedException e) {
+			e.printStackTrace();
+			System.err.println("ERROR AT DISK DELAY SIM");
 		}
 		SIM.Trace(SIM.TraceHWDisk, "SimulatedDisk: wake up!");
 
@@ -162,7 +164,7 @@ class HWTimer implements Runnable {
 	}
 }
 
-class HWSimulation {
+public class HWSimulation {
 	//
 	// ***** Object data *****
 	//
