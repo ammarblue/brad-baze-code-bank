@@ -86,7 +86,7 @@ public class SIM extends Applet {
 	static public HWSimulation hw;
 	public PrintStream pout;
 	public SIMPauser sosPauser = new SIMPauser();
-	public Vector threadList = new Vector();
+	public Vector threadList = new Vector();//TODO change to Queue
 	public JTabbedPane proc_tabs;
 
 	// --------------------------------------------------------------------
@@ -107,7 +107,8 @@ public class SIM extends Applet {
 		if ((trace_type & SIM.TheSIM.trace_mask) == 0)
 			// we are not recording this type of trace message
 			return;
-		TheSIM.TraceMessage(Thread.currentThread().toString().substring(7)
+		int eIndex=Thread.currentThread().toString().indexOf(",4,file");
+		TheSIM.TraceMessage(Thread.currentThread().toString().substring(7,eIndex)
 				+ "@" + (System.currentTimeMillis() - SIM.TheSIM.startTime)
 				+ ": " + msg);
 		if (!SIM.TheSIM.isApplet)
@@ -131,7 +132,7 @@ public class SIM extends Applet {
 		// This is only necessary for applets
 		if (isApplet) {
 			TheSIM = this;
-			this.resize(600, 7000);
+			this.resize(700, 400);
 		}
 
 		// Create a file to write tracing output to
@@ -175,6 +176,7 @@ public class SIM extends Applet {
 		// Create the simulation object
 		TheSIM = new SIM();
 		SIM.TheSIM.isApplet = false;
+		
 		JFrame TheFrame = new JFrame("SIM");
 
 		// Handle window closing
@@ -186,7 +188,7 @@ public class SIM extends Applet {
 
 		// Set up the frame
 		TheFrame.getContentPane().add(TheSIM, BorderLayout.CENTER);
-		TheFrame.setSize(600, 700);
+		TheFrame.setSize(800, 500);
 		TheSIM.init();
 		TheSIM.start();
 		TheFrame.setVisible(true);
@@ -333,7 +335,7 @@ public class SIM extends Applet {
 		cb_pm = new JCheckBox("PM");
 		if ((trace_mask & TraceSOSPM) == TraceSOSPM)
 			cb_pm.setSelected(true);
-		cb_app.addItemListener(new ItemListener() {
+		cb_pm.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
 				if (e.getStateChange() == ItemEvent.SELECTED)
 					trace_mask |= TraceSOSPM;
@@ -346,7 +348,7 @@ public class SIM extends Applet {
 		cb_disk = new JCheckBox("Disk");
 		if ((trace_mask & TraceSOSDisk) == TraceSOSDisk)
 			cb_disk.setSelected(true);
-		cb_app.addItemListener(new ItemListener() {
+		cb_disk.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
 				if (e.getStateChange() == ItemEvent.SELECTED)
 					trace_mask |= TraceSOSDisk;
@@ -367,7 +369,7 @@ public class SIM extends Applet {
 				if (sosStarted) {
 					// Don't allow starting SOS twice
 					SIM.Trace(TraceAlways,
-							"SOS already started. You can't start it twice!");
+							"SOS already started");
 				} else {
 					// Start with a thread that executes the initialization code
 					Thread t = new Thread(new SOSStart());
@@ -414,6 +416,7 @@ public class SIM extends Applet {
 				if (isApplet) {
 					Trace(TraceAlways,
 							"*** Unload the page to exit the applet ***");
+					System.exit(0);
 				} else {
 					System.exit(0);
 				}
@@ -426,6 +429,11 @@ public class SIM extends Applet {
 		trace_list = new JList(trace_list_model);
 		trace_scroll = new JScrollPane(trace_list);
 		trace_scroll.setBorder(BorderFactory.createLineBorder(Color.black));
+	    trace_scroll.getVerticalScrollBar().addAdjustmentListener(new AdjustmentListener() {  
+	        public void adjustmentValueChanged(AdjustmentEvent e) {  
+	            e.getAdjustable().setValue(e.getAdjustable().getMaximum());  
+	        }
+	    });
 		add(trace_scroll);
 
 		// Make the tabbed pne for the process traces
@@ -437,6 +445,11 @@ public class SIM extends Applet {
 		proc0_model = new DefaultListModel();
 		proc0_trace = new JList(proc0_model);
 		proc0_scroll = new JScrollPane(proc0_trace);
+	    proc0_scroll.getVerticalScrollBar().addAdjustmentListener(new AdjustmentListener() {  
+	        public void adjustmentValueChanged(AdjustmentEvent e) {  
+	            e.getAdjustable().setValue(e.getAdjustable().getMaximum());  
+	        }
+	    });
 		// p.add(proc0_scroll);
 		proc_tabs.addTab("Proc0", null, proc0_scroll, "Trace for process 0");
 	}

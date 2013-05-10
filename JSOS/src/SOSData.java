@@ -11,7 +11,7 @@
 //
 import java.util.*;
 
-class SOSData {
+public class SOSData {
 	// The class containing all SOS global data.
 	//
 	// ***** Process data *****
@@ -49,9 +49,9 @@ class SOSData {
 	// Java Vectors used as queues, one (message_queue) to hold the
 	// messages and another (wait_queue) to hold WaitQueueItems which
 	// record processes that are waiting for messages on the queue.
-	public Vector[] message_queue;
+	public Vector[] message_queue; //TODO change to queue
 
-	public Vector[] wait_queue;
+	public Vector[] wait_queue;//TODO change to queue
 
 	//
 	// ***** Memory management data *****
@@ -67,7 +67,7 @@ class SOSData {
 	public SOSDiskRequest pending_disk_request = new SOSDiskRequest();
 
 	// The items on this Queue are pointers to DiskRequests
-	public Vector disk_queue;
+	public Vector disk_queue;//TODO change to queue
 
 	//
 	// ***** Handles to SOS objects *****
