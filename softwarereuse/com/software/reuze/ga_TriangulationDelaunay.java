@@ -1,0 +1,327 @@
+package com.software.reuze;
+
+
+/*
+ * Copyright (c) 2005, 2007 by L. Paul Chew.
+ *
+ * Permission is hereby granted, without written agreement and without
+ * license or royalty fees, to use, copy, modify, and distribute this
+ * software and its documentation for any purpose, subject to the following
+ * conditions:
+ *
+ * The above copyright notice and this permission notice shall be included
+ * in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+ * OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ */
+
+import java.util.AbstractSet;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.Set;
+
+/**
+ * A 2D Delaunay DelaunayTriangulation (DT) with incremental site insertion.
+ * 
+ * This is not the fastest way to build a DT, but it's a reasonable way to build
+ * a DT incrementally and it makes a nice interactive display. There are several
+ * O(n log n) methods, but they require that the sites are all known initially.
+ * 
+ * A DelaunayTriangulation is a Set of Triangles. A DelaunayTriangulation is
+ * unmodifiable as a Set; the only way to change it is to add sites (via
+ * delaunayPlace).
+ * 
+ * @author Paul Chew
+ * 
+ *         Created July 2005. Derived from an earlier, messier version.
+ * 
+ *         Modified November 2007. Rewrote to use AbstractSet as parent class
+ *         and to use the UndirectedGraph class internally. Tried to make the DT
+ *         algorithm clearer by explicitly creating a cavity. Added code needed
+ *         to find a Voronoi cell.
+ * 
+ * @author Karsten Schmidt
+ * 
+ *         Ported to use toxiclibs classes (June 2010).
+ */
+public class ga_TriangulationDelaunay extends AbstractSet<ga_TriangleDelaunay> {
+
+    private ga_TriangleDelaunay mostRecent = null;
+
+    private d_GraphUndirected<ga_TriangleDelaunay> triGraph;
+
+    /**
+     * All sites must fall within the initial triangle.
+     * 
+     * @param triangle
+     *            the initial triangle
+     */
+    public ga_TriangulationDelaunay(ga_TriangleDelaunay triangle) {
+        triGraph = new d_GraphUndirected<ga_TriangleDelaunay>();
+        triGraph.add(triangle);
+        mostRecent = triangle;
+    }
+
+    /**
+     * True iff triangle is a member of this triangulation. This method isn't
+     * required by AbstractSet, but it improves efficiency.
+     * 
+     * @param triangle
+     *            the object to check for membership
+     */
+    public boolean contains(Object triangle) {
+        return triGraph.getNodes().contains(triangle);
+    }
+
+    /**
+     * Place a new site into the DT. Nothing happens if the site matches an
+     * existing DT vertex.
+     * 
+     * @param site
+     *            the new DelaunayVertex
+     * @throws IllegalArgumentException
+     *             if site does not lie in any triangle
+     */
+    public void delaunayPlace(ga_TriangleDelaunayVertex site) {
+        // Uses straightforward scheme rather than best asymptotic time
+        // Locate containing triangle
+        ga_TriangleDelaunay triangle = locate(site);
+        // Give up if no containing triangle or if site is already in DT
+        if (triangle == null) {
+            throw new IllegalArgumentException("No containing triangle");
+        }
+        if (triangle.contains(site)) {
+            return;
+        }
+        // Determine the cavity and update the triangulation
+        Set<ga_TriangleDelaunay> cavity = getCavity(site, triangle);
+        mostRecent = update(site, cavity);
+    }
+
+    /**
+     * Determine the cavity caused by site.
+     * 
+     * @param site
+     *            the site causing the cavity
+     * @param triangle
+     *            the triangle containing site
+     * @return set of all triangles that have site in their circumcircle
+     */
+    private Set<ga_TriangleDelaunay> getCavity(ga_TriangleDelaunayVertex site,
+            ga_TriangleDelaunay triangle) {
+        Set<ga_TriangleDelaunay> encroached = new HashSet<ga_TriangleDelaunay>();
+        Queue<ga_TriangleDelaunay> toBeChecked = new LinkedList<ga_TriangleDelaunay>();
+        Set<ga_TriangleDelaunay> marked = new HashSet<ga_TriangleDelaunay>();
+        toBeChecked.add(triangle);
+        marked.add(triangle);
+        while (!toBeChecked.isEmpty()) {
+            triangle = toBeChecked.remove();
+            if (site.vsCircumcircle(triangle.toArray(new ga_TriangleDelaunayVertex[0])) == 1) {
+                // Site outside triangle => triangle not in cavity
+                continue;
+            }
+            encroached.add(triangle);
+            // Check the neighbors
+            for (ga_TriangleDelaunay neighbor : triGraph
+                    .getConnectedNodesFor(triangle)) {
+                if (marked.contains(neighbor)) {
+                    continue;
+                }
+                marked.add(neighbor);
+                toBeChecked.add(neighbor);
+            }
+        }
+        return encroached;
+    }
+
+    @Override
+    public Iterator<ga_TriangleDelaunay> iterator() {
+        return triGraph.getNodes().iterator();
+    }
+
+    /**
+     * Locate the triangle with point inside it or on its boundary.
+     * 
+     * @param point
+     *            the point to locate
+     * @return the triangle that holds point; null if no such triangle
+     */
+    public ga_TriangleDelaunay locate(ga_TriangleDelaunayVertex point) {
+        ga_TriangleDelaunay triangle = mostRecent;
+        if (!this.contains(triangle)) {
+            triangle = null;
+        }
+
+        // Try a directed walk (this works fine in 2D, but can fail in 3D)
+        Set<ga_TriangleDelaunay> visited = new HashSet<ga_TriangleDelaunay>();
+        while (triangle != null) {
+            if (visited.contains(triangle)) { // This should never happen
+                System.out.println("Warning: Caught in a locate loop");
+                break;
+            }
+            visited.add(triangle);
+            // Corner opposite point
+            ga_TriangleDelaunayVertex corner = point.isOutside(triangle
+                    .toArray(new ga_TriangleDelaunayVertex[0]));
+            if (corner == null) {
+                return triangle;
+            }
+            triangle = this.neighborOpposite(corner, triangle);
+        }
+        // No luck; try brute force
+        System.out.println("Warning: Checking all triangles for " + point);
+        for (ga_TriangleDelaunay tri : this) {
+            if (point.isOutside(tri.toArray(new ga_TriangleDelaunayVertex[0])) == null) {
+                return tri;
+            }
+        }
+        // No such triangle
+        System.out.println("Warning: No triangle holds " + point);
+        return null;
+    }
+
+    /**
+     * Report neighbor opposite the given vertex of triangle.
+     * 
+     * @param site
+     *            a vertex of triangle
+     * @param triangle
+     *            we want the neighbor of this triangle
+     * @return the neighbor opposite site in triangle; null if none
+     * @throws IllegalArgumentException
+     *             if site is not in this triangle
+     */
+    public ga_TriangleDelaunay neighborOpposite(ga_TriangleDelaunayVertex site,
+            ga_TriangleDelaunay triangle) {
+        if (!triangle.contains(site)) {
+            throw new IllegalArgumentException("Bad vertex; not in triangle");
+        }
+        for (ga_TriangleDelaunay neighbor : triGraph
+                .getConnectedNodesFor(triangle)) {
+            if (!neighbor.contains(site)) {
+                return neighbor;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Return the set of triangles adjacent to triangle.
+     * 
+     * @param triangle
+     *            the triangle to check
+     * @return the neighbors of triangle
+     */
+    public Set<ga_TriangleDelaunay> neighbors(ga_TriangleDelaunay triangle) {
+        return triGraph.getConnectedNodesFor(triangle);
+    }
+
+    @Override
+    public int size() {
+        return triGraph.getNodes().size();
+    }
+
+    /**
+     * Report triangles surrounding site in order (cw or ccw).
+     * 
+     * @param site
+     *            we want the surrounding triangles for this site
+     * @param triangle
+     *            a "starting" triangle that has site as a vertex
+     * @return all triangles surrounding site in order (cw or ccw)
+     * @throws IllegalArgumentException
+     *             if site is not in triangle
+     */
+    public List<ga_TriangleDelaunay> surroundingTriangles(ga_TriangleDelaunayVertex site,
+            ga_TriangleDelaunay triangle) {
+        if (!triangle.contains(site)) {
+            throw new IllegalArgumentException("Site not in triangle");
+        }
+        List<ga_TriangleDelaunay> list = new ArrayList<ga_TriangleDelaunay>();
+        ga_TriangleDelaunay start = triangle;
+        ga_TriangleDelaunayVertex guide = triangle.getVertexButNot(site); // Affects cw or
+        // ccw
+        while (true) {
+            list.add(triangle);
+            ga_TriangleDelaunay previous = triangle;
+            triangle = this.neighborOpposite(guide, triangle); // Next triangle
+            guide = previous.getVertexButNot(site, guide); // Update guide
+            if (triangle == start) {
+                break;
+            }
+        }
+        return list;
+    }
+
+    @Override
+    public String toString() {
+        return "DelaunayTriangulation with " + size() + " triangles";
+    }
+
+    /**
+     * Update the triangulation by removing the cavity triangles and then
+     * filling the cavity with new triangles.
+     * 
+     * @param site
+     *            the site that created the cavity
+     * @param cavity
+     *            the triangles with site in their circumcircle
+     * @return one of the new triangles
+     */
+    private ga_TriangleDelaunay update(ga_TriangleDelaunayVertex site,
+            Set<ga_TriangleDelaunay> cavity) {
+        Set<Set<ga_TriangleDelaunayVertex>> boundary = new HashSet<Set<ga_TriangleDelaunayVertex>>();
+        Set<ga_TriangleDelaunay> theTriangles = new HashSet<ga_TriangleDelaunay>();
+
+        // Find boundary facets and adjacent triangles
+        for (ga_TriangleDelaunay triangle : cavity) {
+            theTriangles.addAll(neighbors(triangle));
+            for (ga_TriangleDelaunayVertex vertex : triangle) {
+                Set<ga_TriangleDelaunayVertex> facet = triangle.facetOpposite(vertex);
+                if (boundary.contains(facet)) {
+                    boundary.remove(facet);
+                } else {
+                    boundary.add(facet);
+                }
+            }
+        }
+        theTriangles.removeAll(cavity); // Adj triangles only
+
+        // Remove the cavity triangles from the triangulation
+        for (ga_TriangleDelaunay triangle : cavity) {
+            triGraph.remove(triangle);
+        }
+
+        // Build each new triangle and add it to the triangulation
+        Set<ga_TriangleDelaunay> newTriangles = new HashSet<ga_TriangleDelaunay>();
+        for (Set<ga_TriangleDelaunayVertex> vertices : boundary) {
+            vertices.add(site);
+            ga_TriangleDelaunay tri = new ga_TriangleDelaunay(vertices);
+            triGraph.add(tri);
+            newTriangles.add(tri);
+        }
+
+        // Update the graph links for each new triangle
+        theTriangles.addAll(newTriangles); // Adj triangle + new triangles
+        for (ga_TriangleDelaunay triangle : newTriangles) {
+            for (ga_TriangleDelaunay other : theTriangles) {
+                if (triangle.isNeighbor(other)) {
+                    triGraph.connect(triangle, other);
+                }
+            }
+        }
+
+        // Return one of the new triangles
+        return newTriangles.iterator().next();
+    }
+}

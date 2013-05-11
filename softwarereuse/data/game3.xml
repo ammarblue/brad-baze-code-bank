@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<game>
+<window x="700" y = "600" color="220 220 220 255"/>  
+<cursor value="cross" />
+<partition size="200" overlap = "40" on="true" />
+<picture id="0" type="Circle" width="2" colors="255 160 255 255  145 64 47 255" />
+<mover name="Person 1" pictureid="0" steering="wander">
+	<pos x="150" y = "300" />
+	<velocity x="72" y = "0" />
+	<heading x="1" y = "0" />
+	<collision_radius value="10" />
+	<max_speed value="72" />
+	<mass value="1" />
+	<max_turn_rate value="1" />
+	<max_force value="200" />		
+</mover>
+<picture id="1" type="Polygon" colors="200 96 96 255  0 0 0 255" width="2" />
+<buildings xml="d001_buildings.xml" pictureid="1" />
+</game>
