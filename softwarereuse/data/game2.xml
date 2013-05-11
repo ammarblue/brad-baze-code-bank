@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<game>
+<window x="640" y = "480" color="220 220 220 255"/>  
+<cursor value="cross" />
+<partition size="200" overlap = "80" on="true" />
+<graph xml="d002_graph.xml" />
+<picture id="0" type="Polygon" colors="200 96 96 255  0 0 0 255" width="2" />
+<buildings xml="d002_building.xml" pictureid="0" />
+<!-- <picture id="-1" type="ImageAnimatedGif" image="bonusmany.gif" /> -->
+<!-- <picture id="1" type="Circle" width="2" colors="255 160 255 255  145 64 47 255" /> -->
+<!--  <picture id="1" type="Arrow" width="2" colors="255 160 255 255  145 64 47 255" /> -->
+<picture id="1" type="ImageFile" image="tileset1.png" x="0" y="32" width="32" height="32" />
+<movers xml="d002_patrol.xml" pictureid="1" steering="followleader" />
+</game>

@@ -1,0 +1,24 @@
+root LHipJoint RHipJoint LowerBack 
+LHipJoint LeftUpLeg 
+LeftUpLeg LeftLeg 
+LeftLeg LeftFoot 
+LeftFoot LeftToeBase 
+RHipJoint RightUpLeg 
+RightUpLeg RightLeg 
+RightLeg RightFoot 
+RightFoot RightToeBase 
+LowerBack Spine 
+Spine Spine1 
+Spine1 Neck LeftShoulder RightShoulder 
+Neck Neck1 
+Neck1 Head 
+LeftShoulder LeftArm 
+LeftArm LeftForeArm 
+LeftForeArm LeftHand 
+LeftHand LeftFingerBase LThumb 
+LeftFingerBase LeftHandIndex1 
+RightShoulder RightArm 
+RightArm RightForeArm 
+RightForeArm RightHand 
+RightHand RightFingerBase RThumb 
+RightFingerBase RightHandIndex1

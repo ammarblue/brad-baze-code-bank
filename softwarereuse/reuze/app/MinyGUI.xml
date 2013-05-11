@@ -1,0 +1,65 @@
+<MinyGUI>
+	<Rect>
+		<x>0</x>
+		<y>0</y>
+		<w>200</w>
+		<h>400</h>
+	</Rect>
+	<properties elements="13">
+		<0 type="PropertyButton">
+			<name>Start</name>
+		</0>
+		<1 type="PropertyButton">
+			<name>Tester</name>
+		</1>
+		<2 type="PropertyButtonImage">
+			<name>../data/particle.png</name>
+		</2>
+		<3 type="PropertyCheckBox">
+			<name>Running</name>
+			<_value>true</_value>
+		</3>
+		<4 type="PropertyList">
+			<name>Speed</name>
+			<_value>2</_value>
+			<rawchoices>slowest;slow;normal;fast;fastest</rawchoices>
+		</4>
+		<5 type="PropertyDisplay">
+			<name>Time</name>
+			<_value>0.0</_value>
+		</5>
+		<6 type="PropertyEditFloat">
+			<name>Border width</name>
+			<_value>2.0</_value>
+		</6>
+		<7 type="PropertySliderFloat">
+			<name>Rect size</name>
+			<_value>1.0</_value>
+			<_mini>0.5</_mini>
+			<_maxi>2.0</_maxi>
+		</7>
+		<8 type="PropertyColorChooser">
+			<name>Fill color</name>
+			<_value>-4144960</_value>
+		</8>
+		<9 type="PropertyGraph">
+			<name>Rotation</name>
+		</9>
+		<10 type="PropertyGradient">
+			<name>Gradient</name>
+		</10>
+		<11 type="PropertyRadioButton">
+			<name>Test</name>
+			<Group>Test Buttons</Group>
+			<indexingroup>0</indexingroup>
+		</11>
+		<12 type="PropertyRadioButton">
+			<name>Test 2</name>
+			<Group>Test Buttons</Group>
+			<indexingroup>1</indexingroup>
+		</12>
+	</properties>
+	<fg>-16777216</fg>
+	<bg>-1</bg>
+	<selectColor>-3881788</selectColor>
+</MinyGUI>
