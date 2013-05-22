@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <entry key="okButton.text"> ОК </entry>
+  <entry key="cancelButton.text"> Отмена </entry>
+  <entry key="errorMessage.title.text">Сообщение об ошибке</entry>
+  
+  <entry key="constants.text">Константы</entry>
+  <entry key="functions.text">Функции</entry>
+  <entry key="binaryOperators.text">Двоичные Операторы</entry>
+  <entry key="ternaryOperators.text">Троичные Операторы</entry>
+
+  <entry key="Register.text">регистр</entry>
+  <entry key="qubitIndex.text">Кубит индекс</entry>
+  <entry key="controlQubit.text">Управляющий кубит</entry>
+  <entry key="targetQubit.text">Управляемый кубит</entry>
+
+  <entry key="jQuantum.info.title">О программе</entry>
+  <entry key="jQuantum.info.text">Симуляция квантового компьютера</entry>
+  <entry key="jQuantum.fileMenu.text">Файл</entry>
+  <entry key="jQuantum.loadMenuItem.text">Открыть схему</entry>
+  <entry key="jQuantum.loadExampleMenuItem.text">Открыть пример схему</entry>
+  <entry key="jQuantum.saveMenuItem.text">Сохранить схему</entry>
+  <entry key="jQuantum.configMenu.text">Настройка</entry>
+  <entry key="jQuantum.exitMenuItem.text">Выход</entry>
+  <entry key="jQuantum.lengthBrighteningItem.toolTipText">Яркость состояния кубита зависит от длины состояния?</entry>
+  <entry key="jQuantum.lengthBrighteningMenuItem.text">Окраска длины состояний</entry>
+  <entry key="jQuantum.helpMenu.text">Помощь</entry>
+  <entry key="jQuantum.aboutMenuItem.text">О программе</entry>
+  <entry key="jQuantum.colorMenuItem.text">Раскраска комплексных чисел</entry>
+  <entry key="jQuantum.helpMenuItem.text">Справка по jQuantum</entry>
+  <entry key="jQuantum.controlPanel.border.title">Управление</entry>
+  <entry key="jQuantum.constructPanel.border.title">Проектирование Схемы</entry>
+  <entry key="jQuantum.registerPanel.border.title">Состояние Регистров</entry>
+  <entry key="jQuantum.iniButton.toolTipText">Инициализируйте регистры</entry>
+  <entry key="jQuantum.nextButton.toolTipText">&lt;html>Вперёд (= ALT+&#x2192;)</entry>
+  <entry key="jQuantum.prevButton.toolTipText">&lt;html>Назад (= ALT+&#x2190;)</entry>
+  <entry key="jQuantum.prevButton.errorText">Измерение не обратимо!
+(Регистры инициализируются заново)
+  </entry>
+  <entry key="jQuantum.goButton.toolTipText">&lt;html>Запуск всей схемы (= ALT+&#x2191;)</entry>
+  <entry key="jQuantum.restartButton.toolTipText">&lt;html>Инициализируйте (= ALT+&#x2193;)</entry>
+  <entry key="jQuantum.iniQubitButton.toolTipText">Инициализируйте кубиты</entry>
+  <entry key="jQuantum.hadamardButton.toolTipText">гейт Адамара</entry>
+  <entry key="jQuantum.cNOTButton.toolTipText">c-NOT гейт</entry>
+  <entry key="jQuantum.xButton.toolTipText">X гейт (= NOT)</entry>
+  <entry key="jQuantum.yButton.toolTipText">Y гейт</entry>
+  <entry key="jQuantum.zButton.toolTipText">Z гейт</entry>
+  <entry key="jQuantum.sButton.toolTipText">S гейт</entry>
+  <entry key="jQuantum.invSButton.toolTipText">&lt;html>S&lt;sup>†&lt;/sup> гейт</entry>
+  <entry key="jQuantum.tButton.toolTipText">T гейт</entry>
+  <entry key="jQuantum.sqrtXButton.toolTipText">&lt;html>&#x221A;NOT гейт</entry>
+  <entry key="jQuantum.toffoliButton.toolTipText">гейт Тоффоли</entry>
+  <entry key="jQuantum.qftButton.toolTipText">квантовое преобразование Фурье</entry>
+  <entry key="jQuantum.invQFTButton.toolTipText">обратное квантовое преобразование Фурье</entry>
+  <entry key="jQuantum.rotationButton.toolTipText">Оператор поворота</entry>
+  <entry key="jQuantum.U_fButton.toolTipText">Вычисление функции</entry>
+  <entry key="jQuantum.groverButton.toolTipText">Оператор Гровера</entry>
+  <entry key="jQuantum.measureButton.toolTipText">Измерение</entry>
+  <entry key="jQuantum.deleteButton.toolTipText">Удалить последний гейт (также: 'ALT-BACKSPACE')</entry>
+  <entry key="jQuantum.error.yRegisterTooSmall">&lt;i>y&lt;/i>-Регистр очень маленький (Cannot store all function values!)</entry>
+  <entry key="jQuantum.help.title">Краткая документация пользователя </entry>
+  <entry key="jQuantum.help.text">
+  <!-- This text is in HTML format; note that all HTM tags begin with &lt; -->
+&lt;h3>
+  1. Структура рабочего окна
+&lt;/h3>
+&lt;p>
+  Слева, Вы найдете панель управления, в которой есть кнопки для
+  инициализации и для контроля выполнения квантовой программы.
+  Верхняя горизонтальная панель состоит из кнопок, добавляющих квантовые гейты
+  на схему, изображение которой расположено ниже.
+  В низу вы надйте представление квантового регистра.
+  Представление разделено на две части, одна из которых получает значения на вход
+  (&lt;i>x&lt;/i>-регистр), а вторая отправляет значения на выход (&lt;i>y&lt;/i>-регистр),
+  которая является временным хранением данных, используемого, например, в алгоритмах Шора.
+&lt;/p>&lt;br>
+&lt;h3>
+  2. Инициализация квантового регистра&lt;/h3>
+&lt;p>
+  Для определения размера регистра вначале нажмите на кнопку
+  &lt;span style=\"color:#009D00\">&lt;i>&#968;&lt;/i>&lt;sub>0&lt;/sub>&lt;/span>.
+  Регистр кубита размера &lt;i>n&lt;/i> определяется 2&lt;sup>&lt;i>n&lt;/i>&lt;/sup>
+  базовыми состояниями. На панели регистра каждый базис представлен
+  одним квадратом, цвет которого определяет комплексную амплитуду базового состояния,
+  подробнее читайте в документации.
+&lt;/p>&lt;br>
+&lt;h3>
+  3. Проектирование квантовой схемы
+&lt;/h3>
+&lt;p>
+  После инициализации квантового регистра, вы можете добавить несколько квантовый гейтов на схему
+  просто нажимая кнопки на панели проектирования  схемой. Обычно от вас требуется ввести дополнительную
+  информацию. Последний добавленный гейт может быть удалён по нажатию самой правой кнопки на панели.
+&lt;/p>&lt;br>
+&lt;h3>
+  4. Запуск алгоритма&lt;/h3>
+&lt;p>
+  Вы можете запустить алгоритм на выполнения в двух режимах. Либо в режиме пошагового
+  выполнения, нажимая на две "блокирующих" стрелки на панели управления, либо в режиме
+  полного выполнения за один раз, нажимая на зелёную стрелку ниже.
+&lt;/p>
+  </entry>
+  <entry key="jQuantum.loadError.title">Ошибка открытия файла (схема не читается)</entry>
+  <entry key="jQuantum.loadError.text">не правильный формат представления схемы!</entry>
+  <entry key="jQuantum.loadError.textsupplement">
+  Если вы пытаетесь загрузить файл, созданный более ранней версией jQuantum чем 1.1,
+  &lt;br>пожалуйста переконвертируйте файл с помощью программы для конвертации,
+  &lt;br>доступной по адресу
+  &lt;br>&lt;br>
+  &lt;a href="http://jQuantum.sourceforge.net/converter.jar">
+  http://jQuantum.sourceforge.net/converter.jar
+  &lt;/a>
+  </entry>
+  <entry key="ColorInfoFrame.text">
+&lt;h3>
+  Расцветка чисел в комплексной плоскости
+&lt;/h3>
+&lt;p>
+  Комплексное число &lt;i>z&lt;/i> может быть представлено &lt;i>парой&lt;/i> вещественных чисел.
+  Обычно есть два различных представления:
+  &lt;i>Картезианское представление&lt;/i> как сумма
+&lt;/p>
+&lt;p style=\"text-align:center\">
+      &lt;i>z&lt;/i> = &lt;i>x&lt;/i> + i&lt;i>y&lt;/i>
+&lt;/p>
+&lt;p>
+  его &lt;i>целых частей x&lt;/i>м его &lt;i> y&lt;/i>, или
+&lt;i>полярной декомпозиции&lt;/i>
+&lt;/p>
+&lt;p style=\"text-align:center\">
+      &lt;i>z&lt;/i> = &lt;i>r&lt;/i> e&lt;sup>i&lt;i>&#x03C6;&lt;/i>&lt;/sup>
+&lt;/p>
+&lt;p>
+  как результат
+  &lt;i>абсолютного значения&lt;/i> (ии длины) &lt;i>r&lt;/i> = |&lt;i>z&lt;/i>| и 
+&lt;i>фазы&lt;/i> (или &lt;i>аргумента&lt;/i>) &lt;i>&#x03C6;&lt;/i>.
+&lt;/p>
+&lt;p>
+  Полярная декомпозиция является базисом карты расцветки в комплексной плоскости.
+  Здесь цвет - это комбинация цвета и яркости,
+  комплексного числа &lt;i>z&lt;/i> заданного фазой &lt;i>&#x03C6;&lt;/i>
+  и его абсолютным значением |&lt;i>z&lt;/i>|. Цвет вначале числа &lt;i>z&lt;/i> = 0 остаётся
+  неопределённым, однако с тех пор как его значение станет 0, цвет будет черным.
+&lt;/p>
+&lt;p>
+  Например, положительное вещественно число - красное, а отрицательное вещественное число светло голубое.
+&lt;/p>
+  </entry>
+  <entry key="InitialStateDialog.toggleTip">Бит сбрасывается по нажатию кнопки</entry>
+  <entry key="InitialStateDialog.questionLabel.text">Введите начальное состояние кубита:</entry>
+  <entry key="InitialStateDialog.errorMessage">Пожалуйста, введите "0" или "1"!</entry>
+  <entry key="InitDialog.iniLabel.text">Начальное состояние: </entry>
+  <entry key="InitDialog.questionLabel.text">Пожалуйста, укажите размеры регистров:</entry>
+  <entry key="InitDialog.errorMessage_1">Начальное состояние номер &gt; вместительность x-регистров</entry>
+  <entry key="InitDialog.errorMessage_2">Пожалуйста, введите неотрицательное число для задания размера y-регистра!</entry>
+  <entry key="InitDialog.errorMessage_3">Пожалуйста, введите неотрицательное число для задания размера x-регистра!</entry>
+  <entry key="GateDialog.questionLabel.text">Пожалуйста, введите соответствующие кубит(ы):</entry>
+  <entry key="GateDialog.Grover.questionLabel.text">Оператор Гровера Данные:</entry>
+  <entry key="GateDialog.Grover.needle.text">Searched value</entry>
+  <entry key="GateDialog.Grover.number.text">Итерации</entry>
+  <entry key="GateDialog.errorMessage_1">Пожалуйста введите номер кубита</entry>
+  <entry key="GateDialog.errorMessage_2">Регистр очень маленький</entry>
+  <entry key="RotationDialog.title.text">Ввведите Гейт Вращения</entry>
+  <entry key="RotationDialog.controlInputPanel.border.text">Управляющий кубит(ы)</entry>
+  <entry key="RotationDialog.targetInputPanel.border.text">Управляемый кубит</entry>
+  <entry key="RotationDialog.cNumberLabel.text">Номер: </entry>
+  <entry key="RotationDialog.errorMessage_1">Пожалуйста, введите неотрицательное целое!</entry>
+  <entry key="RotationDialog.errorMessage_2">Пожалуйста, введите разные номера для управляющего и управляемого кубита!</entry>
+  <entry key="RotationDialog.errorMessage_3">Пожалуйста, введите номер кубита</entry>
+  <entry key="FunctionDialog.questionLabel.text">Введите функцию, которая должна быть вычислена:</entry>
+  <entry key="FunctionDialog.errorMessage">Функция должна быть сформирована следующими операторами</entry>
+  <entry key="MeasureDialog.questionLabel.text">Измерить ...</entry>
+  <entry key="MeasureDialog.qubitRadioButton.text">единственный кубит</entry>
+  <entry key="MeasureDialog.qubitLabel.text">единственный кубит</entry>
+  <entry key="MeasureDialog.errorMessage">Диапазон вводимых чисел</entry>
+  <entry key="CircuitPanel.Grover.toolTipText">searched value (чёрный ящик): </entry>
+</properties>
