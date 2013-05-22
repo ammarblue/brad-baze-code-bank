@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <entry key="okButton.text"> OK </entry>
+  <entry key="cancelButton.text"> Avbryt </entry>
+  <entry key="errorMessage.title.text">Felmeddelande</entry>
+  
+  <entry key="constants.text">Konstanter</entry>
+  <entry key="functions.text">Funktioner</entry>
+  <entry key="binaryOperators.text">Binär operatorer</entry>
+  <entry key="ternaryOperators.text">Ternär operatorer</entry>
+  
+  <entry key="Register.text">register</entry>
+  <entry key="qubitIndex.text">Qubit index</entry>
+  <entry key="controlQubit.text">Control qubit</entry>
+  <entry key="targetQubit.text">Target qubit</entry>
+  
+  <entry key="jQuantum.info.title">Om programmet</entry>
+  <entry key="jQuantum.info.text">Simulation of a quantum computer</entry>
+  <entry key="jQuantum.fileMenu.text">Fil</entry>
+  <entry key="jQuantum.loadMenuItem.text">Ladda krets</entry>
+  <entry key="jQuantum.saveMenuItem.text">Spara krets</entry>
+  <entry key="jQuantum.loadExampleMenuItem.text">Load exempel krets</entry>
+  <entry key="jQuantum.configMenu.text">Konfiguration</entry>
+  <entry key="jQuantum.exitMenuItem.text">Avsluta</entry>
+  <entry key="jQuantum.lengthBrighteningItem.toolTipText">Brightness of a qubit state depending on its length?</entry>
+  <entry key="jQuantum.lengthBrighteningMenuItem.text">Length coloring</entry>
+  <entry key="jQuantum.helpMenu.text">Hjälp</entry>
+  <entry key="jQuantum.aboutMenuItem.text">Om programmet</entry>
+  <entry key="jQuantum.colorMenuItem.text">Coloring complex numbers</entry>
+  <entry key="jQuantum.helpMenuItem.text">Help om jQuantum</entry>
+  <entry key="jQuantum.controlPanel.border.title">Styrning</entry>
+  <entry key="jQuantum.constructPanel.border.title">Krets design</entry>
+  <entry key="jQuantum.registerPanel.border.title">Register tillstånden</entry>
+  <entry key="jQuantum.iniButton.toolTipText">Initialize registers</entry>
+  <entry key="jQuantum.nextButton.toolTipText">&lt;html>Do next step (= ALT+&#x2192;)</entry>
+  <entry key="jQuantum.prevButton.toolTipText">&lt;html>Do previous step (= ALT+&#x2190;)</entry>
+  <entry key="jQuantum.prevButton.errorText">A measurement is not reversible!
+(Register will be re-initialized)
+  </entry>
+  <entry key="jQuantum.goButton.toolTipText">&lt;html>Run complete circuit (= ALT+&#x2191;)</entry>
+  <entry key="jQuantum.restartButton.toolTipText">&lt;html>Restart (= ALT+&#x2193;)</entry>
+  <entry key="jQuantum.iniQubitButton.toolTipText">Initialize qubits</entry>
+  <entry key="jQuantum.hadamardButton.toolTipText">Hadamard gate</entry>
+  <entry key="jQuantum.cNOTButton.toolTipText">c-NOT gate</entry>
+  <entry key="jQuantum.xButton.toolTipText">X gate (= NOT)</entry>
+  <entry key="jQuantum.yButton.toolTipText">Y gate</entry>
+  <entry key="jQuantum.zButton.toolTipText">Z gate</entry>
+  <entry key="jQuantum.sButton.toolTipText">S gate</entry>
+  <entry key="jQuantum.invSButton.toolTipText">&lt;html>S&lt;sup>†&lt;/sup> gate</entry>
+  <entry key="jQuantum.tButton.toolTipText">T gate</entry>
+  <entry key="jQuantum.sqrtXButton.toolTipText">&lt;html>&#x221A;NOT gate</entry>
+  <entry key="jQuantum.toffoliButton.toolTipText">Toffoli gate</entry>
+  <entry key="jQuantum.qftButton.toolTipText">quantum Fourier transform</entry>
+  <entry key="jQuantum.invQFTButton.toolTipText">inverse quantum Fourier transform</entry>
+  <entry key="jQuantum.rotationButton.toolTipText">Rotation operator</entry>
+  <entry key="jQuantum.U_fButton.toolTipText">Function evaluation</entry>
+  <entry key="jQuantum.groverButton.toolTipText">Grover operator</entry>
+  <entry key="jQuantum.measureButton.toolTipText">Measurement</entry>
+  <entry key="jQuantum.deleteButton.toolTipText">Delete last gate (also: 'ALT-BACKSPACE')</entry>
+  <entry key="jQuantum.error.yRegisterTooSmall">The &lt;i>y&lt;/i>-register is too small to store all function values!</entry>
+  <entry key="jQuantum.help.title">Short User's Manual</entry>
+  <entry key="jQuantum.help.text">
+  <!-- This text is in HTML format; note that all HTM tags begin with &lt; -->
+&lt;h3>
+  1. Structure of the work space window
+&lt;/h3>
+&lt;p>
+  On the left, you find the control panel, in which there are
+  the buttons to initialize and to control the run of the quantum program.
+  The upper horizontal panel consists of buttons to add quantum gates
+  to the circuit canvas directly below it.
+  At the bottom you find the representation of the quantum register.
+  It is divided into a part which receives the input and supplies the output,
+  called the &lt;i>x&lt;/i>-register, and into a part called &lt;i>y&lt;/i>-register,
+  which serves mainly as a temporary qubit storage, as e.g. for Shor's
+  function evaluation principle.
+&lt;/p>&lt;br>
+&lt;h3>
+  2. Initializing the quantum register&lt;/h3>
+&lt;p>
+  To determine the size of the register, first click on the button
+  &lt;span style=\"color:#009D00\">&lt;i>&#968;&lt;/i>&lt;sub>0&lt;/sub>&lt;/span>.
+  A qubit register of size &lt;i>n&lt;/i> is determined by 2&lt;sup>&lt;i>n&lt;/i>&lt;/sup>
+  base states. In the register panel, each basis state is represented
+  as a single square whose color specifies the (complex) amplitude
+  of the base state, cf. the documentation.
+&lt;/p>&lt;br>
+&lt;h3>
+  3. Designing the quantum circuit
+&lt;/h3>
+&lt;p>
+  Having initialized the quantum register, you can add several quantum gates to the circuit
+  by simply clicking on the buttons in the circuit
+  design panel. Usually you are prompted for further necessary information.
+  The currently last added gate can be deleted by using the button on the right-most position.
+&lt;/p>&lt;br>
+&lt;h3>
+  4. Running the algorithm&lt;/h3>
+&lt;p>
+  You can run the algorithm in two modes. Either you can go stepwise
+  by clicking the two \"blocked\" arrow buttons in the control panel, or you can perform a single 
+  run by clicking the green arrow lower-most.
+&lt;/p>
+  </entry>
+  <entry key="jQuantum.loadError.title">File Error (Circuit unreadable)</entry>
+  <entry key="jQuantum.loadError.text">does not contain a format representing a quantum circuit!</entry>
+  <entry key="jQuantum.loadError.textsupplement">
+  If you are trying to load a file created by an older version 
+  &lt;br>
+  of the jQuantum simulator prior to 1.1, please convert it
+  &lt;br>
+  with the conversion program available under
+  &lt;br>&lt;br>
+  &lt;a href="http://jQuantum.sourceforge.net/converter.jar">
+  http://jQuantum.sourceforge.net/converter.jar
+  &lt;/a>
+  </entry>
+  <entry key="ColorInfoFrame.text">
+&lt;h3>
+  Color Map of the Complex Plane
+&lt;/h3>
+&lt;p>
+  A complex number &lt;i>z&lt;/i> can be represented uniquely by a &lt;i>pair&lt;/i> of real numbers. 
+  Usually, there are used two different representations, the 
+  &lt;i>Cartesian representation&lt;/i> as the sum 
+&lt;/p>
+&lt;p style=\"text-align:center\">
+      &lt;i>z&lt;/i> = &lt;i>x&lt;/i> + i&lt;i>y&lt;/i> 
+&lt;/p>
+&lt;p>
+  of its &lt;i>real part x&lt;/i> and its &lt;i>imaginary part y&lt;/i>, or the 
+&lt;i>polar decomposition&lt;/i> 
+&lt;/p>
+&lt;p style=\"text-align:center\">
+      &lt;i>z&lt;/i> = &lt;i>r&lt;/i> e&lt;sup>i&lt;i>&#x03C6;&lt;/i>&lt;/sup>
+&lt;/p>
+&lt;p>
+  as the product of 
+  the &lt;i>absolute value&lt;/i> (or the length) &lt;i>r&lt;/i> = |&lt;i>z&lt;/i>| of &lt;i>z&lt;/i> and 
+the &lt;i>phase&lt;/i> (or the &lt;i>argument&lt;/i>) &lt;i>&#x03C6;&lt;/i> of &lt;i>z&lt;/i>.
+&lt;/p>
+&lt;p>
+  The polar decomposition is the basis for the color map of the complex plane. 
+  Here, the hue, as a combination of color and brightness, 
+  of a complex number &lt;i>z&lt;/i> is given by its phase &lt;i>&#x03C6;&lt;/i> 
+  and its absolute value |&lt;i>z&lt;/i>|. The color of the origin &lt;i>z&lt;/i> = 0 remains 
+  undetermined, however since its absolute value is 0, its hue is black.
+&lt;/p>
+&lt;p>
+  For instance, a positive real number is red, whereas a negative real number is light blue.
+&lt;/p>
+  </entry>
+  <entry key="InitialStateDialog.toggleTip">Flip bit by pressing the button</entry>
+  <entry key="InitialStateDialog.questionLabel.text">Input the initial qubit state:</entry>
+  <entry key="InitialStateDialog.errorMessage">Please input only "0" or "1"!</entry>
+  <entry key="InitDialog.iniLabel.text">Initial state: </entry>
+  <entry key="InitDialog.questionLabel.text">Please input the register sizes:</entry>
+  <entry key="InitDialog.errorMessage_1">Number for the initial state is &gt; x-register capacity</entry>
+  <entry key="InitDialog.errorMessage_2">Please input a nonnegative number for y-register size!</entry>
+  <entry key="InitDialog.errorMessage_3">Please input a positive number for x-register size!</entry>
+  <entry key="GateDialog.questionLabel.text">Please input the qubit(s) being acted on:</entry>
+  <entry key="GateDialog.Grover.questionLabel.text">Grover operator data:</entry>
+  <entry key="GateDialog.Grover.needle.text">Searched value</entry>
+  <entry key="GateDialog.Grover.number.text">Number of Iterations</entry>
+  <entry key="GateDialog.errorMessage_1">Please input a number for qubit</entry>
+  <entry key="GateDialog.errorMessage_2">register too small</entry>
+  <entry key="RotationDialog.title.text">Input Rotation Gate</entry>
+  <entry key="RotationDialog.controlInputPanel.border.text">Control qubit(s)</entry>
+  <entry key="RotationDialog.targetInputPanel.border.text">Target qubit</entry>
+  <entry key="RotationDialog.cNumberLabel.text">Number: </entry>
+  <entry key="RotationDialog.errorMessage_1">Please input a nonegative integer!</entry>
+  <entry key="RotationDialog.errorMessage_2">Please input different qubit numbers for control and target</entry>
+  <entry key="RotationDialog.errorMessage_3">Please input a number for qubit</entry>
+  <entry key="FunctionDialog.questionLabel.text">Input the function to be evaluated:</entry>
+  <entry key="FunctionDialog.errorMessage">The function must be composed by the following operators</entry>
+  <entry key="MeasureDialog.questionLabel.text">Measure ...</entry>
+  <entry key="MeasureDialog.qubitRadioButton.text">single qubit</entry>
+  <entry key="MeasureDialog.qubitLabel.text">single qubit</entry>
+  <entry key="MeasureDialog.errorMessage">Range of an input number</entry>
+  <entry key="CircuitPanel.Grover.toolTipText">searched value (blackbox): </entry>
+</properties>

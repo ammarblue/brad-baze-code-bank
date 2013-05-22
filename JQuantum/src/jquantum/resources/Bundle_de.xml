@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <entry key="okButton.text"> OK </entry>
+  <entry key="cancelButton.text"> Abbrechen </entry>
+  <entry key="errorMessage.title.text">Fehlermeldung</entry>
+
+  <entry key="constants.text">Konstanten</entry>
+  <entry key="functions.text">Funktionen</entry>
+  <entry key="binaryOperators.text">Binäre Operatoren</entry>
+  <entry key="ternaryOperators.text">Ternäre Operatoren</entry>
+  
+  <entry key="Register.text">Register</entry>
+  <entry key="qubitIndex.text">Qubit Index</entry>
+  <entry key="controlQubit.text">Kontroll-Qubit</entry>
+  <entry key="targetQubit.text">Ziel-Qubit</entry>
+
+  <entry key="jQuantum.info.title">Über das Programm</entry>
+  <entry key="jQuantum.info.text">Simulation eines Quantenrechners</entry>
+  <entry key="jQuantum.fileMenu.text">Datei</entry>
+  <entry key="jQuantum.loadMenuItem.text">Quantenschaltung laden</entry>
+  <entry key="jQuantum.loadExampleMenuItem.text">Beispielschaltung laden</entry>
+  <entry key="jQuantum.saveMenuItem.text">Quantenschaltung speichern</entry>
+  <entry key="jQuantum.configMenu.text">Konfiguration</entry>
+  <entry key="jQuantum.exitMenuItem.text">Beenden</entry>
+  <entry key="jQuantum.lengthBrighteningItem.toolTipText">Helligkeit des Qubitzustands abhängig von seiner Länge?</entry>
+  <entry key="jQuantum.lengthBrighteningMenuItem.text">Helligkeitscodierung der Länge</entry>
+  <entry key="jQuantum.helpMenu.text">Hilfe</entry>
+  <entry key="jQuantum.aboutMenuItem.text">Über das Programm</entry>
+  <entry key="jQuantum.helpMenuItem.text">Hilfe für jQuantum</entry>
+  <entry key="jQuantum.colorMenuItem.text">Farbkodierung komplexer Zahlen</entry>
+  <entry key="jQuantum.controlPanel.border.title">Steuerung</entry>
+  <entry key="jQuantum.constructPanel.border.title">Entwurfsbrett für Quantenschaltungen</entry>
+  <entry key="jQuantum.registerPanel.border.title">Quantenregister-Zustände</entry>
+  <entry key="jQuantum.iniButton.toolTipText">Initialisierung der Register</entry>
+  <entry key="jQuantum.nextButton.toolTipText">&lt;html>nächster Schritt (= ALT+&#x2192;)</entry>
+  <entry key="jQuantum.prevButton.toolTipText">&lt;html>vorheriger Schritt (= ALT+&#x2190;)</entry>
+  <entry key="jQuantum.prevButton.errorText">Eine Messung ist nicht reversibel!
+(Register wird wieder initialisiert)
+  </entry>
+  <entry key="jQuantum.goButton.toolTipText">&lt;html>Kompletter Durchlauf (= ALT+&#x2191;)</entry>
+  <entry key="jQuantum.restartButton.toolTipText">&lt;html>Neustart (= ALT+&#x2193;)</entry>
+  <entry key="jQuantum.iniQubitButton.toolTipText">Initialisierung der Qubits</entry>
+  <entry key="jQuantum.hadamardButton.toolTipText">Hadamard Gatter</entry>
+  <entry key="jQuantum.cNOTButton.toolTipText">c-NOT Gatter</entry>
+  <entry key="jQuantum.xButton.toolTipText">X Gatter (= NOT)</entry>
+  <entry key="jQuantum.yButton.toolTipText">Y Gatter</entry>
+  <entry key="jQuantum.zButton.toolTipText">Z Gatter</entry>
+  <entry key="jQuantum.sButton.toolTipText">S Gatter</entry>
+  <entry key="jQuantum.invSButton.toolTipText">&lt;html>S&lt;sup>†&lt;/sup> Gatter</entry>
+  <entry key="jQuantum.tButton.toolTipText">T Gatter</entry>
+  <entry key="jQuantum.sqrtXButton.toolTipText">&lt;html>&#x221A;NOT Gatter</entry>
+  <entry key="jQuantum.toffoliButton.toolTipText">Toffoli Gatter</entry>
+  <entry key="jQuantum.qftButton.toolTipText">Quanten-Fouriertransformation</entry>
+  <entry key="jQuantum.invQFTButton.toolTipText">inverse QuantenFouriertransformation</entry>
+  <entry key="jQuantum.rotationButton.toolTipText">Rotationsoperator</entry>
+  <entry key="jQuantum.U_fButton.toolTipText">Funktionsauswertung</entry>
+  <entry key="jQuantum.groverButton.toolTipText">Grover-Operator</entry>
+  <entry key="jQuantum.measureButton.toolTipText">Messung</entry>
+  <entry key="jQuantum.deleteButton.toolTipText">Löschen letztes Gatter (auch: 'ALT-BACKSPACE')</entry>
+  <entry key="jQuantum.error.yRegisterTooSmall">Das &lt;i>y&lt;/i>-Register ist zu klein, um alle Funktionswerte zu speichern!</entry>
+  <entry key="jQuantum.help.title">Kurzanleitung</entry>
+  <entry key="jQuantum.help.text">
+  <!-- This text is in HTML format; note that all HTM tags begin with &lt; -->
+&lt;h3>
+   1. Struktur der Arbeitsfläche
+&lt;/h3>
+&lt;p>
+Links befindet sich die Steuerleiste, in der die Schaltflächen zur Initialisierung der Quantenschaltung und zur Durchführung des Quantenprogramms eingerichtet sind. Die obere horizontale Leiste des Fensters besteht aus Schaltflächen, mit denen Quantengatter zum Quantenschaltkreis hinzugefügt werden können. Das Entwurfsbrett für die Schaltkreise befindet sich direkt darunter. Im unteren Fensterbereich ist der aktuelle Zustand des Quantenregisters abgebildet. Die Darstellung ist unterteilt in das &lt;i>x&lt;/i>-Register, das die Eingabe empfängt und die Ausgabe liefert, sowie das &lt;i>y&lt;/i>-Register, das hauptsächlich als Zwischenspeicher für Qubits dient, wie z.B. für Algorithmen nach Shors Phasenschätzung (Funktionsauswertung).
+&lt;/p>&lt;br>
+   
+&lt;h3>2. Initialisierung des Quantenregisters &lt;/h3>
+&lt;p>
+   Das Quantenregister wird mit der Schaltfläche 
+&lt;span style=\"color:#009D00\">&lt;i>&#968;&lt;/i>&lt;sub>0&lt;/sub>&lt;/span> 
+   eingerichtet, indem die Anzahl der Qubits für jedes der Register bestimmt wird. 
+   Ein Qubit-Register der Größe &lt;i>n&lt;/i> wird bestimmt durch 
+   2&lt;sup>&lt;i>n&lt;/i>&lt;/sup> Basiszustände. 
+   In der Registerfläche ist jeder dieser Basiszustände durch ein einzelnes Quadrat 
+   dargestellt, dessen Färbung der (komplexen) Amplitude des Basiszustands entspricht, 
+   siehe die Dokumentation.
+&lt;/p>&lt;br>
+
+&lt;h3>3. Entwurf der Quantenschaltung&lt;/h3>
+&lt;p> 
+   Nach der Initialisierung des Quantenregisters können Sie die Quantengatter durch Anklicken der Schaltflächen in der Entwurfsleiste in die Quantenschaltung einbauen. Normalerweise werden Sie durch ein Dialogfenster nach notwendigen Zusatzinformationen für das jeweilige Gatter befragt. Das jeweils zuletzt eingefügte Gatter kann durch die Löschtaste ganz rechts wieder entfernt werden.&lt;/p>&lt;br>&lt;h3>4. Ausführung des Algorithmus&lt;/h3>&lt;p> Gestartet und ausgeführt wird der Quantenalgorithmus durch die Schaltflächen in der Steuerleiste links. Es gibt zwei Ausführungsweisen: einerseits kann man den Algorithmus schrittweise ausführen mit den beiden oberen "blockierten" Pfeiltasten, andererseits kann man ihn in einem vollständigen Durchlauf ausführen mit der unteren Pfeiltaste.
+&lt;/p>
+</entry>
+  <entry key="jQuantum.loadError.title">Dateifehler (Quantenschaltung nicht lesbar)</entry>
+  <entry key="jQuantum.loadError.text">enthält keine Quantenschaltung!</entry>
+  <entry key="jQuantum.loadError.textsupplement">
+  If you are trying to load a file created by an older version 
+  &lt;br>
+  of the jQuantum simulator prior to 1.1, please convert it
+  &lt;br>
+  with the conversion program available under
+  &lt;br>&lt;br>
+  &lt;a href="http://jQuantum.sourceforge.net/converter.jar">
+  http://jQuantum.sourceforge.net/converter.jar
+  &lt;/a>
+  </entry>
+  <entry key="ColorInfoFrame.text">
+&lt;h3>
+  Farbenkarte der komplexen Ebene
+&lt;/h3>
+&lt;p>
+  Eine komplexe Zahl &lt;i>z&lt;/i> kann durch zwei reelle Zahlen eindeutig dargestellt werden. 
+  Üblicherweise werden dazu zwei unterschiedliche Darstellungen verwendet, 
+  einerseits die &lt;i>Kartesische Darstellung&lt;/i> als die Summe 
+&lt;/p>
+&lt;p style=\"text-align:center\">
+    &lt;i>z&lt;/i> = &lt;i>x&lt;/i> + i&lt;i>y&lt;/i> 
+&lt;/p>
+&lt;p>
+  des &lt;i>Realteils x&lt;/i> und des &lt;i>Imaginärteils y&lt;/i> von &lt;i>z&lt;/i>, 
+  andererseits die &lt;i>Polarzerlegung&lt;/i> 
+&lt;/p>
+&lt;p style=\"text-align:center\">
+      &lt;i>z&lt;/i> = &lt;i>r&lt;/i> e&lt;sup>i&lt;i>&#x03C6;&lt;/i>&lt;/sup> 
+&lt;/p>
+&lt;p>
+  als das Produkt des &lt;i>Absolutbetrags&lt;/i> (oder der Länge) 
+  &lt;i>r&lt;/i> = |&lt;i>z&lt;/i>| von &lt;i>z&lt;/i> und 
+  der &lt;i>Phase&lt;/i> (oder auch: des &lt;i>Arguments&lt;/i>) &lt;i>&#x03C6;&lt;/i> von &lt;i>z&lt;/i>.
+&lt;/p>
+&lt;p>
+  Die Polarzerlegung ist die Grundlage für die Farbenkarte der komplexen Ebene. 
+  Die Farbschattierung (engl.: &lt;i>hue&lt;/i>), also die Kombination aus Farbton und Helligkeit, 
+  einer komplexen Zahl &lt;i>z&lt;/i> 
+  hängt hierbei von ihrer Phase &lt;i>&#x03C6;&lt;/i> und ihrem Betrag |&lt;i>z&lt;/i>| ab. 
+  Der Farbton des Ursprungs &lt;i>z&lt;/i> = 0 ist dabei zwar unbestimmt, wegen des 
+  Betrags 0 ist dessen Farbschattierung jedoch schwarz. 
+&lt;/p>
+&lt;p>
+  Eine positive reelle Zahl beispielsweise ist rot, eine negative reelle Zahl dagegen hellblau.
+&lt;/p>
+  </entry>
+  <entry key="InitialStateDialog.toggleTip">Bitflip durch Drücken des Schalters</entry>
+  <entry key="InitialStateDialog.questionLabel.text">Anfangszustand des Registers:</entry>
+  <entry key="InitialStateDialog.errorMessage">Bitte nur "0" oder "1" eingeben!</entry>
+  <entry key="InitDialog.iniLabel.text">Anfangszustand: </entry>
+  <entry key="InitDialog.questionLabel.text">Die Größen der Register:</entry>
+  <entry key="InitDialog.errorMessage_1">Nummer für den Anfangszustand &gt; x-Registerkapazität</entry>
+  <entry key="InitDialog.errorMessage_2">Bitte eine nichtnegative Zahl als y-Registergröße eingeben!</entry>
+  <entry key="InitDialog.errorMessage_3">Bitte eine positive Zahl als x-Registergröße eingeben!</entry>
+  <entry key="GateDialog.questionLabel.text">Qubits, auf die operiert werden soll:</entry>
+  <entry key="GateDialog.Grover.questionLabel.text">Daten für Grover-Operator:</entry>
+  <entry key="GateDialog.Grover.needle.text">Zu suchender Wert</entry>
+  <entry key="GateDialog.Grover.number.text">Anzahl Iterationen</entry>
+  <entry key="GateDialog.errorMessage_1">Bitte eine Zahl eingeben für Qubit Nr.</entry>
+  <entry key="GateDialog.errorMessage_2">Register zu klein</entry>
+  <entry key="RotationDialog.title.text">Eingabe Rotationsgatter</entry>
+  <entry key="RotationDialog.controlInputPanel.border.text">Kontroll-Qubit(s)</entry>
+  <entry key="RotationDialog.targetInputPanel.border.text">Ziel-Qubit</entry>
+  <entry key="RotationDialog.cNumberLabel.text">Anzahl: </entry>
+  <entry key="RotationDialog.errorMessage_1">Bitte eine nichtnegative ganze Zahl eingeben!</entry>
+  <entry key="RotationDialog.errorMessage_2">Bitte verschiedene Nummern für Kontroll- und Ziel-Qubits eingeben</entry>
+  <entry key="RotationDialog.errorMessage_3">Bitte eine Zahl eingeben für Qubit Nr.</entry>
+  <entry key="FunctionDialog.questionLabel.text">Die auszuwertende Funktion:</entry>
+  <entry key="FunctionDialog.errorMessage">Die Funktion muss aus den folgenden Operatoren bestehen</entry>
+  <entry key="MeasureDialog.questionLabel.text">Messung von ...</entry>
+  <entry key="MeasureDialog.qubitRadioButton.text">einzelnem Qubit</entry>
+  <entry key="MeasureDialog.qubitLabel.text">einzelnes Qubit</entry>
+  <entry key="MeasureDialog.errorMessage">Bereich einer einzugebenden Zahl</entry>
+  <entry key="CircuitPanel.Grover.toolTipText">gesuchte Zahl (Blackbox): </entry>
+</properties>
