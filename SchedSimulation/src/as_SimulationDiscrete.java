@@ -7,7 +7,7 @@ public class as_SimulationDiscrete {
 	static AtomicInteger nThreads = new AtomicInteger(),
 			bThreads = new AtomicInteger();
 	static PriorityBlockingQueue<as_SimulationThread> q = new PriorityBlockingQueue<as_SimulationThread>();
-
+	static GraphingData graph=new GraphingData();
 	public static void Hold(double delay) {
 		if (delay < 0)
 			throw new RuntimeException("wait time less than zero");
@@ -109,7 +109,8 @@ public class as_SimulationDiscrete {
 			System.out.println("TIME=" + as_SimulationThread.clock);
 			as_SimulationEntity.Print();
 			da_Histogram.Print();
-			System.exit(0);
+			graph.makeGraph(da_Histogram.getData(),da_Histogram.getSteps());
+			//System.exit(0);
 		}
 	}
 
