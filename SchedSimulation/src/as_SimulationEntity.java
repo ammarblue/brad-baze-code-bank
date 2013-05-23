@@ -1,9 +1,12 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Stack;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
+
+
 
 public class as_SimulationEntity {
 
@@ -53,7 +56,7 @@ public class as_SimulationEntity {
 	 */
 	public void Enter(int num, int priority) {
 		if (num <= 0 || num > maxCapacity)
-			throw new RuntimeException("illegal Enter request");
+			throw new RuntimeException("illegal Enter request with num of:"+num);
 		int needed = amtUsed + num;
 		as_SimulationThread t = (as_SimulationThread) Thread.currentThread();
 		t.request.entryTime = as_SimulationThread.clock;
@@ -139,4 +142,5 @@ public class as_SimulationEntity {
 	public boolean isFull() {
 		return amtUsed == maxCapacity;
 	}
+	
 }
