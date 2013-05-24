@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 public class demoSimulationMem extends as_SimulationThread {
 	int PT;
 	int RT;
+	static int quantum=1;//time quantum
 	private static Logger log = Logger.getLogger(as_SimulationEntity.class
 			.getName());// error log for this class only
 	static as_SimulationEntity Procs = new as_SimulationEntity("PTable", 1);
@@ -18,13 +19,12 @@ public class demoSimulationMem extends as_SimulationThread {
 	public void run() {
 		super.run();
 		double start = clock;
-		while (RT > 0) {
+		while (RT > 0) {//this is a simple round robin
 			Procs.Enter(1);// go in
-			//run for some time 
-			int rtime=1;
-			as_SimulationDiscrete.Hold(rtime);
+			// run for some time
+			as_SimulationDiscrete.Hold(quantum);
 			Procs.Leave(1);// go out
-			RT-=rtime;
+			RT -= quantum;
 		}
 		waittime.Tabulate(clock - start); // get stats
 		exit();

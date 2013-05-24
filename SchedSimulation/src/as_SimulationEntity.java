@@ -6,8 +6,6 @@ import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
 
-
-
 public class as_SimulationEntity {
 
 	static ArrayList<as_SimulationEntity> list = new ArrayList<as_SimulationEntity>();
@@ -37,8 +35,9 @@ public class as_SimulationEntity {
 					d = Math.sqrt(d);
 				}
 			}
+			System.out.printf("%-15s\n",s.name);
 			System.out.printf("%s\t%.3f\t\t%.3f\n", s.name + "\t\t  "
-					+ s.maxCapacity + "\t\t  " + s.numEnters + "\t  "
+					+ s.maxCapacity + "\t\t " + s.numEnters + "\t  "
 					+ s.maxUsed, m, d);
 		}
 	}
@@ -56,7 +55,8 @@ public class as_SimulationEntity {
 	 */
 	public void Enter(int num, int priority) {
 		if (num <= 0 || num > maxCapacity)
-			throw new RuntimeException("illegal Enter request with num of:"+num);
+			throw new RuntimeException("illegal Enter request with num of:"
+					+ num);
 		int needed = amtUsed + num;
 		as_SimulationThread t = (as_SimulationThread) Thread.currentThread();
 		t.request.entryTime = as_SimulationThread.clock;
@@ -142,5 +142,5 @@ public class as_SimulationEntity {
 	public boolean isFull() {
 		return amtUsed == maxCapacity;
 	}
-	
+
 }

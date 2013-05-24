@@ -7,7 +7,8 @@ public class as_SimulationDiscrete {
 	static AtomicInteger nThreads = new AtomicInteger(),
 			bThreads = new AtomicInteger();
 	static PriorityBlockingQueue<as_SimulationThread> q = new PriorityBlockingQueue<as_SimulationThread>();
-	static GraphingData graph=new GraphingData();
+	static GraphingData graph = new GraphingData();
+
 	public static void Hold(double delay) {
 		if (delay < 0)
 			throw new RuntimeException("wait time less than zero");
@@ -75,7 +76,7 @@ public class as_SimulationDiscrete {
 					System.exit(-1);
 				}
 			for (;;) {
-				System.out.println("S");
+				System.out.println("Enter Schedular");
 				while (bThreads.intValue() < nThreads.intValue())
 					try {
 						sleep(1);
@@ -93,6 +94,7 @@ public class as_SimulationDiscrete {
 					System.exit(-1);
 				}
 				as_SimulationThread.clock = t.eventTime;
+				System.out.println("Exiting Schedular");
 				System.out.println("time=" + as_SimulationThread.clock
 						+ " running " + t);
 				bThreads.decrementAndGet();
@@ -109,8 +111,8 @@ public class as_SimulationDiscrete {
 			System.out.println("TIME=" + as_SimulationThread.clock);
 			as_SimulationEntity.Print();
 			da_Histogram.Print();
-			graph.makeGraph(da_Histogram.getData(),da_Histogram.getSteps());
-			//System.exit(0);
+			graph.makeGraph(da_Histogram.getData(), da_Histogram.getSteps());
+			// System.exit(0);
 		}
 	}
 
