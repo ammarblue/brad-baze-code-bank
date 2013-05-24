@@ -5,15 +5,17 @@ import javax.swing.*;
 
 public class GraphingData extends JPanel {
 	int[] data;
-	final int PAD=30;
+	final int PAD = 30;
 	int steps;
-	GraphingData(){}
-	
-	GraphingData(int[] in,int steps){
-		data=in;
-		this.steps=steps;
+
+	GraphingData() {
 	}
-	
+
+	GraphingData(int[] in, int steps) {
+		data = in;
+		this.steps = steps;
+	}
+
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		Graphics2D g2 = (Graphics2D) g;
@@ -35,7 +37,8 @@ public class GraphingData extends JPanel {
 		float sy = PAD + ((h - 2 * PAD) - s.length() * sh) / 2 + lm.getAscent();
 		for (int i = 0; i < s.length(); i++) {
 			String letter = String.valueOf(s.charAt(i));
-			float sw = (float) font.getStringBounds(letter, frc).getWidth()+(PAD/2);
+			float sw = (float) font.getStringBounds(letter, frc).getWidth()
+					+ (PAD / 2);
 			float sx = (PAD - sw) / 2;
 			g2.drawString(letter, sx, sy);
 			sy += sh;
@@ -45,7 +48,7 @@ public class GraphingData extends JPanel {
 		sy = h - PAD + (PAD - sh) / 2 + lm.getAscent();
 		float sw = (float) font.getStringBounds(s, frc).getWidth();
 		float sx = (w - sw) / 2;
-		g2.drawString(s, sx, sy+5);
+		g2.drawString(s, sx, sy + 5);
 		// Draw lines.
 		double xInc = (double) (w - 2 * PAD) / (data.length - 1);
 		double scale = (double) (h - 2 * PAD) / getMax();
@@ -64,14 +67,15 @@ public class GraphingData extends JPanel {
 			g2.setPaint(Color.red);
 			g2.fill(new Ellipse2D.Double(x - 2, y - 2, 4, 4));
 			g2.setPaint(Color.black);
-			//x axis numbering
-			g2.drawString(Integer.toString(i*steps), (float) x-5, sy-PAD/4);
+			// x axis numbering
+			g2.drawString(Integer.toString(i * steps), (float) x - 5, sy - PAD
+					/ 4);
 		}
-		
-		for(int i=0;i<getMax()+1;i++){
-			sx = (PAD+5) / 2;
-			double y = 3+h - PAD - scale * i;
-			//y axis numbering
+
+		for (int i = 0; i < getMax() + 1; i++) {
+			sx = (PAD + 5) / 2;
+			double y = 3 + h - PAD - scale * i;
+			// y axis numbering
 			g2.drawString(Integer.toString(i), sx, (float) y);
 		}
 	}
@@ -84,11 +88,11 @@ public class GraphingData extends JPanel {
 		}
 		return max;
 	}
-	
-	public void makeGraph(int[] in,int steps) {
+
+	public void makeGraph(int[] in, int steps) {
 		JFrame f = new JFrame();
 		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		f.add(new GraphingData(in,steps));
+		f.add(new GraphingData(in, steps));
 		f.setSize(800, 400);
 		f.setVisible(true);
 	}

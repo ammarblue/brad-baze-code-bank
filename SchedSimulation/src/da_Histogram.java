@@ -10,7 +10,8 @@ public class da_Histogram {
 	int lower;
 	static int step;
 	long hist[];
-	static ArrayList<Integer> Gdata=new ArrayList<Integer>();
+	static ArrayList<Integer> Gdata = new ArrayList<Integer>();
+
 	public da_Histogram(String name, int lowerbound, int stepamt,
 			int numIntervals) {
 		this.name = name;
@@ -21,7 +22,7 @@ public class da_Histogram {
 		if (stepamt <= 0 || numIntervals <= 0)
 			throw new RuntimeException("histogram arguments <=0");
 		list.add(this);
-		
+
 	}
 
 	/* Tallies x into the table data */
@@ -53,7 +54,7 @@ public class da_Histogram {
 
 	/* Prints out all associated data with tables and clears them */
 	public static void Print() {
-		
+
 		if (list.isEmpty())
 			return;
 		System.out.println("Histogram\t\tnEntries\tMean\tStdDev");
@@ -75,7 +76,7 @@ public class da_Histogram {
 					+ s.numEntries + "\t\t", s.sumEntries / s.numEntries, d);
 			System.out
 					.println("UpperBound\tnEntries\tPercent\tCumulativePercent");
-			
+
 			int i = s.lower, j = 0, k = s.numIntervals + 2;
 
 			for (long l : s.hist) {
@@ -86,19 +87,21 @@ public class da_Histogram {
 				System.out.printf("%s\t\t%.2f\t     %.2f\n", "   " + i
 						+ "\t\t    " + l, ((float) l / s.numEntries),
 						((float) j / s.numEntries));
-				Gdata.add((int)(((float)j/s.numEntries)*100));
+				Gdata.add((int) (((float) j / s.numEntries) * 100));
 				i += s.step;
 			}
 		}
 	}
-	public static int[] getData(){
-		int[] temp=new int[Gdata.size()-1];
-		for(int i=0;i<Gdata.size()-1;i++){
-			temp[i]=Gdata.get(i).intValue();
+
+	public static int[] getData() {
+		int[] temp = new int[Gdata.size() - 1];
+		for (int i = 0; i < Gdata.size() - 1; i++) {
+			temp[i] = Gdata.get(i).intValue();
 		}
 		return temp;
 	}
-	public static int getSteps(){
+
+	public static int getSteps() {
 		return step;
 	}
 }
