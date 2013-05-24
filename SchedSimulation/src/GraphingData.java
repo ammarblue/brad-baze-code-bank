@@ -31,7 +31,7 @@ public class GraphingData extends JPanel {
 		LineMetrics lm = font.getLineMetrics("0", frc);
 		float sh = lm.getAscent() + lm.getDescent();
 		// Ordinate label.
-		String s = "Percent";
+		String s = "Percent Complete";
 		float sy = PAD + ((h - 2 * PAD) - s.length() * sh) / 2 + lm.getAscent();
 		for (int i = 0; i < s.length(); i++) {
 			String letter = String.valueOf(s.charAt(i));
@@ -41,7 +41,7 @@ public class GraphingData extends JPanel {
 			sy += sh;
 		}
 		// Abcissa label.
-		s = "Bounds";
+		s = "Clock";
 		sy = h - PAD + (PAD - sh) / 2 + lm.getAscent();
 		float sw = (float) font.getStringBounds(s, frc).getWidth();
 		float sx = (w - sw) / 2;

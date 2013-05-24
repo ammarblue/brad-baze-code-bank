@@ -86,13 +86,13 @@ public class da_Histogram {
 				System.out.printf("%s\t\t%.2f\t     %.2f\n", "   " + i
 						+ "\t\t    " + l, ((float) l / s.numEntries),
 						((float) j / s.numEntries));
-				Gdata.add((int)(((float)l/s.numEntries)*100));
+				Gdata.add((int)(((float)j/s.numEntries)*100));
 				i += s.step;
 			}
 		}
 	}
 	public static int[] getData(){
-		int[] temp=new int[Gdata.size()];
+		int[] temp=new int[Gdata.size()-1];
 		for(int i=0;i<Gdata.size()-1;i++){
 			temp[i]=Gdata.get(i).intValue();
 		}
