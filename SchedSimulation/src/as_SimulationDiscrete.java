@@ -7,8 +7,9 @@ public class as_SimulationDiscrete {
 	static AtomicInteger nThreads = new AtomicInteger(),
 			bThreads = new AtomicInteger();
 	static PriorityBlockingQueue<as_SimulationThread> q = new PriorityBlockingQueue<as_SimulationThread>();
+	
 	static GraphingData graph = new GraphingData();
-
+	
 	public static void Hold(double delay) {
 		if (delay < 0)
 			throw new RuntimeException("wait time less than zero");
@@ -85,8 +86,14 @@ public class as_SimulationDiscrete {
 						System.exit(-1);
 					}
 				as_SimulationThread t = null;
+				if(as_SimulationThread.threadList.size()>1){
+					sched();
+				}
 				try {
 					t = q.poll(500, TimeUnit.MILLISECONDS);
+					if(!as_SimulationThread.threadList.isEmpty()){
+						as_SimulationThread.threadList.remove(t);
+					}
 					if (t == null)
 						break;
 				} catch (InterruptedException e) {
@@ -113,6 +120,17 @@ public class as_SimulationDiscrete {
 			da_Histogram.Print();
 			graph.makeGraph(da_Histogram.getData(), da_Histogram.getSteps());
 			// System.exit(0);
+		}
+		public synchronized void sched(){
+			int index=0;
+			for(int i=1;i<as_SimulationThread.threadList.size();i++){
+				if(as_SimulationThread.threadList.get(i-1).RT<as_SimulationThread.threadList.get(i).RT){
+					index=i-1;
+				}else{
+					index=i;
+				}
+			}
+			as_SimulationThread.threadList.get(index).setSimPriority(1);
 		}
 	}
 

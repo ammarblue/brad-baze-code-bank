@@ -8,11 +8,11 @@ public class DeusExMachina extends as_SimulationThread {
 	@Override
 	public void run() {
 		super.run();
-		for (int i = 0; i < 20; i++) {
+		for (int i = 0; i < 10; i++) {
 			// set execution time needed
-			int ptime = (int) (Math.random() * 3) + 1;
+			int ptime = (int) (Math.random()*10)+1;
 			// create proc
-			demoSimulationMem RW = new demoSimulationMem("proc " + i, ptime);
+			demoSimulationMem RW = new demoSimulationMem("proc " + i, ptime,3);
 			// place into system
 			RW.start();
 		}

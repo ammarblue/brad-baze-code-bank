@@ -59,10 +59,15 @@ public class as_SimulationEntity {
 					+ num);
 		int needed = amtUsed + num;
 		as_SimulationThread t = (as_SimulationThread) Thread.currentThread();
+
 		t.request.entryTime = as_SimulationThread.clock;
 		if (needed > maxCapacity) {
 			t.request.num = num;
-			t.request.priority = priority;
+			if(priority!=0){
+				t.request.priority = priority;
+			}else{
+				System.out.println(t.request.priority);
+			}
 			q.add(t.request);
 			as_SimulationDiscrete.bThreads.incrementAndGet();
 			t.block();
